@@ -34,7 +34,6 @@ root/
 			js/
 
 			img/
-
 index.html
 
 
