@@ -34,8 +34,9 @@ root/
 			js/
 
 			img/
-			
+
 index.html
+
 
 Link:
 http://stackoverflow.com/a/24199357
