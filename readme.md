@@ -5,7 +5,6 @@ Folder Structure:
 
 
 root/
-
 	assets/
 
 		lib/-------------------------libraries--------------------
