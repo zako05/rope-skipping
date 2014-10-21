@@ -3,6 +3,25 @@ Description:
 
 Folder Structure:
 
+root
+	assets
+		lib
+			bootstrap
+				css
+				js
+				images
+			jqurey
+				js
+			fonts
+				css
+				images
+		common
+			css
+			js
+			img
+index.html
+
+
 root/
  assets/
   lib/-------------------------libraries--------------------
