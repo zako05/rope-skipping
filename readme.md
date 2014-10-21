@@ -3,22 +3,22 @@ Description:
 
 Folder Structure:
 
-root
-	assets
-		lib
-			bootstrap
-				css
-				js
-				images
-			jqurey
-				js
-			fonts
-				css
-				images
-		common
-			css
-			js
-			img
+.root
+..assets
+...lib
+....bootstrap
+.....css
+.....js
+.....images
+....jqurey
+.....js
+....fonts
+.....css
+.....images
+...common
+....css
+....js
+....img
 index.html
 
 
