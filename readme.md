@@ -4,7 +4,8 @@ Description:
 Folder Structure:
 
 
-root/
+	root/
+
 	assets/
 
 		lib/-------------------------libraries--------------------
