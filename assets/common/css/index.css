@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../font/BebasNeue.otf') format('opentype');
+}
+
+
 li {
 	margin-left: 30px;
 	font-size: 20px;
@@ -23,6 +29,30 @@ header h1 a {
 	height: 91px;
 	float: left;
 	margin: 10px 15px 22px;
+}
+
+h2 p {
+	font-family: 'BebasNeue';
+	font-size: 62px;
+	margin: 0px;
+	margin-left: 55px;
+	margin-right: 55px;
+	padding-left: 6px;
+	padding-right: 3px;
+}
+
+.vitajte {
+	margin-left: 60px;
+	padding-left: 47px;
+	padding-right: 47px;
+}
+
+.na_stranke {
+	font-size: 36px;
+	margin-top: -25px;
+	margin-bottom: -25px;
+	margin-left: 60px;
+	padding-left: 53px;
 }
 
 /*
