@@ -5,9 +5,13 @@
 
 
 li {	
-	font-size: 20px;
+	font-size: 25px;
 	display: inline;
 }	
+
+p {
+//	text-transform: capitalize;
+}
 
 /*
 *******************
@@ -19,7 +23,7 @@ header h1 {
 	text-indent: -9999px;
 	float: left;
 	margin-top: 20px;
-	//margin: bottom;
+	margin: bottom;
 }
 
 header h1 a {
@@ -29,6 +33,48 @@ header h1 a {
 	float: left;
 	margin: 10px 15px 22px;
 }
+
+/*
+*******************
+* =nav
+*******************
+*/
+
+header li {
+	margin-left: 30px;
+}
+
+footer li {
+	margin-right: 30px;
+}
+
+nav {
+	font-family: 'BebasNeue';
+}
+
+header nav {
+	float: right;
+	clear: right;
+	margin-bottom: 20px;
+	margin-left: -55px;
+}
+
+footer nav {
+	float: left;
+	margin-left: -15px;
+}
+
+.lang {
+	font-family: 'BebasNeue';
+	float: right;
+	margin-top: 20px;
+}
+
+/*
+ *******************
+ * =banner
+ *******************
+*/
 
 h2 span {
 	font-family: 'BebasNeue';
@@ -55,51 +101,12 @@ h2 span.na_stranke {
 	padding-left: 53px;
 }
 
-/*
-*******************
-* =nav
-*******************
-*/
-
-header li {
-	margin-left: 30px;
-}
-
-footer li {
-	margin-right: 30px;
-}
-
-nav {
-	font-family: 'BebasNeue';
-}
-
-header nav {
-	float: right;
-	clear: right;
-	margin-bottom: 20px;
-}
-
-footer nav {
-	float: left;
-	margin-left: -15px;
-}
-
-.lang {
-	font-family: 'BebasNeue';
-	float: right;
-	margin-top: 20px;
-}
-
-/*
- *******************
- * =banner
- *******************
-*/
-
 .banner {
 	float: left;
 	border-top: 1px solid #d1d1d1;
-	border-bottom: 1px solid #d1d1d1;
+	margin-left: 0px;
+	margin-right:0px;
+//	border-bottom: 1px solid #d1d1d1;
 }
 
 /*
