@@ -1,11 +1,10 @@
 @font-face {
 	font-family: 'BebasNeue';
-	src: url('../font/BebasNeue.otf') format('opentype');
+	src: url('../fonts/BebasNeue.otf') format('opentype');
 }
 
 
-li {
-	margin-left: 30px;
+li {	
 	font-size: 20px;
 	display: inline;
 }	
@@ -31,23 +30,24 @@ header h1 a {
 	margin: 10px 15px 22px;
 }
 
-h2 p {
+h2 span {
 	font-family: 'BebasNeue';
 	font-size: 62px;
-	margin: 0px;
+//	margin: 0px;
 	margin-left: 55px;
 	margin-right: 55px;
 	padding-left: 6px;
 	padding-right: 3px;
+	display: block;
 }
 
-.vitajte {
+h2 span.vitajte {
 	margin-left: 60px;
 	padding-left: 47px;
 	padding-right: 47px;
 }
 
-.na_stranke {
+h2 span.na_stranke {
 	font-size: 36px;
 	margin-top: -25px;
 	margin-bottom: -25px;
@@ -61,13 +61,31 @@ h2 p {
 *******************
 */
 
+header li {
+	margin-left: 30px;
+}
+
+footer li {
+	margin-right: 30px;
+}
+
+nav {
+	font-family: 'BebasNeue';
+}
+
 header nav {
 	float: right;
 	clear: right;
 	margin-bottom: 20px;
 }
 
+footer nav {
+	float: left;
+	margin-left: -15px;
+}
+
 .lang {
+	font-family: 'BebasNeue';
 	float: right;
 	margin-top: 20px;
 }
@@ -86,6 +104,16 @@ header nav {
 
 /*
 *******************
+* =main
+*******************
+*/
+
+.main {
+	border-top: 1px solid #d1d1d1;
+}
+
+/*
+*******************
 * =footer
 *******************
 */
@@ -94,19 +122,27 @@ footer {
 	border-top: 1px solid #d1d1d1;
 }
 
-footer nav {
-	float: left;
-}
-
 footer ul {
 	padding-left: 0px;
 }
 
+footer ul.soc_sites {
+	font-family: 'BebasNeue';
+//	display: inline;
+//	margin-left: 0px;
+//	margin-right: 20px;
+}
+
+/*
+
 footer li {
+	font-family: 'BebasNeue';
 	display: inline;
 	margin-left: 0px;
 	margin-right: 20px;
 }
+
+*/
 
 /*
 *******************
