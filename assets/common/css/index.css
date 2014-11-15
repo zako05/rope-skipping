@@ -9,10 +9,6 @@ li {
 	display: inline;
 }	
 
-p {
-//	text-transform: capitalize;
-}
-
 /*
 *******************
 * =header
@@ -22,8 +18,7 @@ p {
 header h1 {
 	text-indent: -9999px;
 	float: left;
-	margin-top: 20px;
-	margin: bottom;
+	margin-bottom: 0;
 }
 
 header h1 a {
@@ -34,19 +29,15 @@ header h1 a {
 	margin: 10px 15px 22px;
 }
 
+header li {
+	margin-left: 30px;
+}
+
 /*
 *******************
 * =nav
 *******************
 */
-
-header li {
-	margin-left: 30px;
-}
-
-footer li {
-	margin-right: 30px;
-}
 
 nav {
 	font-family: 'BebasNeue';
@@ -133,23 +124,18 @@ footer ul {
 	padding-left: 0px;
 }
 
-footer ul.soc_sites {
-	font-family: 'BebasNeue';
-//	display: inline;
-//	margin-left: 0px;
-//	margin-right: 20px;
-}
-
-/*
-
 footer li {
-	font-family: 'BebasNeue';
-	display: inline;
-	margin-left: 0px;
-	margin-right: 20px;
+	margin-right: 30px;
 }
 
-*/
+.soc_site {
+	font-family: 'BebasNeue';
+	margin-left: 60px;
+}
+
+.soc_site li {
+	margin-right: 15px;
+}
 
 /*
 *******************
