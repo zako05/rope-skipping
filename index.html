@@ -4,6 +4,9 @@
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/common/css/index.css">
 	<title>Crazy Jump</title>
+	<script type="text/javascript" src="assets/lib/jquery/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/js/jssor.slider.mini.js"></script>
+	<script type="text/javascript" src="assets/common/js/banner.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -33,20 +36,36 @@
 				</div>
 			</div>
 			<div class="row banner">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<h2>
 						<span class="vitajte">Vitajte</span>
 						<span class="na_stranke">na stránke</span>
 						<span>Crazy Jump</span>
 					</h2>
-					<p>
+					<p class="banner_text">
 						Sme partia ľudí, ktorí cez švihadlo skáču nejaký ten rok. Chceme rozšíriť tento šport aj na Slovensko, preto vedieme kurzy pre deti, mládež i dospelých a organizujeme rôzne workshopy, prezentácie a vystúpenia po celom Slovensku.
 					</p>
 				</div>
-				<div class="col-md-8">
-					<p>
-						Java Script
-					</p>
+				<div class="col-md-6">
+					<div id="slider1_container">
+						<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 20px; top: 30px; width: 540px; height: 285px;">
+							<div><img u="image" src="assets/common/img/banner1_540x285px.png" /></div>
+							<div><img u="image" src="assets/common/img/banner2_540x285px.png" /></div>
+							<div><img u="image" src="assets/common/img/banner3_540x285px.png" /></div>
+							<div><img u="image" src="assets/common/img/banner4_540x285px.png" /></div>
+							<div><img u="image" src="assets/common/img/banner5_540x285px.png" /></div>
+						</div>
+						<!-- Bullet Navigator -->
+						<div u="navigator" class="jssorb12" style="position: absolute; top: 319px; right: 0px; left: 240px;">
+							<!-- bullet navigator item prototype -->
+							<div u="prototype" style="position: absolute; width: 16px; height: 16px;"></div>
+						</div>
+						<!-- Arrow Navigator -->
+						<!-- Arrow Left -->
+						<span u="arrowleft" class="jssora10l" style="width: 28px; height: 40px; top: 153px; left: 28px;"></span>
+						<!-- Arrow Right -->
+						<span u="arrowright" class="jssora10r" style="width: 28px; height: 40px; top: 153px; right: 34px"></span>
+					</div>
 				</div>
 			</div>		
 		</header>		

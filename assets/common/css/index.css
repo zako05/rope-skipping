@@ -21,7 +21,14 @@ li {
 */
 
 header {
-	background-color: #0f201c;
+//	background-color: #0f201c;
+//	background: #1c3d37; /* Old browsers */
+	background: -moz-linear-gradient(top, #1c3d37 0%, #0f201c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c3d37,0.95), color-stop(100%,#0f201c,0.95)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1c3d37 0%,#0f201c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1c3d37 0%,#0f201c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1c3d37 0%,#0f201c 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1c3d37 0%,#0f201c 100%); /* W3C */
 }
 
 header h1 {
@@ -35,7 +42,7 @@ header h1 a {
 	width: 140px;
 	height: 91px;
 	float: left;
-	margin: 10px 15px 20px;
+	margin: 10px 25px 20px;
 }
 
 header li {
@@ -60,7 +67,7 @@ header nav {
 	margin-top: 0px;
 	margin-bottom: 20px;
 	margin-left: -55px;
-	margin-right: 15px;
+	margin-right: 25px;
 }
 
 footer nav {
@@ -73,7 +80,7 @@ footer nav {
 	font-family: 'BebasNeue';
 	float: right;
 	margin-top: 20px;
-	margin-right: 15px;
+	margin-right: 25px;
 }
 
 /*
@@ -86,7 +93,7 @@ h2 span {
 	font-family: 'BebasNeue';
 	font-size: 62px;
 //	margin: 0px;
-	margin-left: 55px;
+	margin-left: 160px;
 	margin-right: 55px;
 	padding-left: 6px;
 	padding-right: 3px;
@@ -95,7 +102,7 @@ h2 span {
 }
 
 h2 span.vitajte {
-	margin-left: 60px;
+	margin-left: 170px;
 	padding-left: 47px;
 	padding-right: 47px;
 }
@@ -104,17 +111,57 @@ h2 span.na_stranke {
 	font-size: 36px;
 	margin-top: -20px;
 	margin-bottom: -20px;
-	margin-left: 60px;
+	margin-left: 170px;
 	padding-left: 53px;
 }
 
 .banner {
 	float: left;
-	border-top: 1px solid #d1d1d1;
+	border-top: 1px solid;
 	margin-left: 0px;
-	margin-right:0px;
+	margin-right: 0px;
 //	border-bottom: 1px solid #d1d1d1;
 	color: #ffffff;
+}
+
+.banner_text {
+	margin-left: 40px;
+}
+
+/* Bullet Navigator Skin Begin */
+.jssorb12 div, .jssorb12 div:hover, .jssorb12 .av {
+	background: url('../img/b21.png') no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+.jssorb12 div { background-position: -7px -7px; }
+.jssorb12 div:hover, .jssorb12 .av:hover { background-position: -37px -7px; }
+.jssorb12 .av { background-position: -67px -7px; }
+.jssorb12 .dn, .jssorb12 .dn:hover { background-position: -97px -7px; }
+
+/* Arrow Navigator Skin Begin */
+.jssora10l, .jssora10r, .jssora10ldn, .jssora10rdn {
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	background: url(../img/a10.png) no-repeat;
+	overflow:hidden;
+}
+.jssora10l { background-position: -16px -39px; }
+.jssora10r { background-position: -76px -39px; }
+.jssora10l:hover { background-position: -136px -39px; }
+.jssora10r:hover { background-position: -196px -39px; }
+.jssora10ldn { background-position: -256px -39px; }
+.jssora10rdn { background-position: -316px -39px; }
+
+#slider1_container {
+	position: relative; 
+	top: 0px; 
+	left: -15px; 
+	width: 585px; 
+	height: 340px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 /*
@@ -127,7 +174,7 @@ h2 span.na_stranke {
 	border-top: 1px solid #d1d1d1;
 	padding-top: 50px;
 	margin-left: 0px;
-	margin-right: 15px;
+	margin-right: 0px;
 }
 
 .main h3 {
