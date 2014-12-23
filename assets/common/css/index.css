@@ -89,6 +89,10 @@ footer nav {
  *******************
 */
 
+h2 {
+	margin-top: 30px;
+}
+
 h2 span {
 	font-family: 'BebasNeue';
 	font-size: 62px;
