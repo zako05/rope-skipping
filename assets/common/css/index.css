@@ -168,7 +168,7 @@ h2 span {
 	padding-left: 53px;
 }
 
-.line-top-banner {
+.line-banner-top {
 	margin: 0px;
 	border: 0px;
 	height: 1px;
@@ -259,7 +259,8 @@ h2 span {
 
 .main {
 //	border-top: 1px solid #d1d1d1;
-	padding-top: 50px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -268,6 +269,26 @@ h2 span {
 //	font-family: 'Open Sans';
 	font-size: 25px;
 	font-weight: normal;
+}
+
+.line-content-top {
+	margin: 0px;
+	border: 0px;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(28,51,65,1), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.line-content-bottom {
+	margin: 0px;
+	border: 0px;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(28,51,65,1), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
 .content_1 h3 {
