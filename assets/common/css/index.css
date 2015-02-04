@@ -137,6 +137,8 @@ footer nav {
  *******************
 */
 
+.col-md-6 {height: 340px;}
+
 h2 {
 	margin-top: 30px;
 	margin-bottom: 0px;
@@ -196,11 +198,12 @@ h2 span {
 }
 
 .banner_text {
-    width: 455px;
+    width: 555px;
 	color: #1eafb5;
-	font-size: 16px;
-	margin-left: 85px;
+	font-size: 18px;
+	//margin-left: 0px;
 	margin-top: 0px;
+	padding-left: 7px;
 }
 
 /* Bullet Navigator Skin Begin */
@@ -261,8 +264,8 @@ h2 span {
 //	border-top: 1px solid #d1d1d1;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .main h3 {
