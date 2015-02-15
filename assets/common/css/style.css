@@ -24,6 +24,12 @@ li {
 	color: 00ffff;
 }
 
+p {
+	font-size: 13px;
+	color: #9a9a9a;
+	//line-height: 1.4;
+}
+
 /*
 *******************
 * =header
@@ -280,6 +286,7 @@ h2 span {
 //	font-family: 'Open Sans';
 	font-size: 25px;
 	font-weight: normal;
+	color: #666666;
 }
 
 .line-content-top {
@@ -412,4 +419,40 @@ footer nav a {
 	border-top: 0px solid #eee;
 	height: 5px;
 	background: -webkit-radial-gradient(50% 0%, 45% 5px, black 1%, white 100%);
+}
+
+/*
+*******************
+* =galery
+*******************
+*/
+
+/*
+*******************
+* =contact
+*******************
+*/
+
+#gmap_canvas {
+	height: 400px;
+	width: 750px;
+	margin-top: 25px;
+
+}
+
+#gmap_canvas img {
+	max-width:none!important;
+	background:none!important;
+}
+
+.highlight_blue {
+	color: #01bfd2;
+}
+
+.contact textarea {
+	margin-left: 48px;
+}
+
+.contact button {
+	margin-left: 298px;	
 }
