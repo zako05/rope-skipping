@@ -473,20 +473,16 @@ footer nav a {
 *******************
 */
 
-h4 {
-	padding-top: 25px;
-	padding-left: 60px;
-	font-size: 25px;
-	font-weight: normal;
-	color: #666666;
-}
-
 .highlight_purple {
 	color: #cd97cf;
 }
 
 .percentage {
-	font-size: 500%;
+	font-size: 425%;
+	height: 45px;
+	width: 45px;
+	position: relative;
+	bottom: 20px;
 	font-family: 'BebasNeue';
 	text-shadow: 2px 2px 6px #000000;
 	float: left;
