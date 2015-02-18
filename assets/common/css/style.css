@@ -32,6 +32,22 @@ p {
 	//line-height: 1.4;
 }
 
+.highlight_purple {
+	color: #cd97cf;
+}
+
+.highlight_blue {
+	color: #01bfd2;
+}
+
+.highlight_red {
+	color: #a40000;
+}
+
+.highlight_green {
+	color: #59af1f;
+}
+
 /*
 *******************
 * =header
@@ -385,7 +401,8 @@ footer nav a {
 .copyright {
 	color: #1eafb5;
 	float: right;
-	margin-right: 10px;
+	margin-right: 7px;
+	font-size: 14px;
 
 }
 
@@ -447,9 +464,7 @@ footer nav a {
 	background:none!important;
 }
 
-.highlight_blue {
-	color: #01bfd2;
-}
+
 
 .contact textarea {
 	margin-left: 48px;
@@ -465,9 +480,6 @@ footer nav a {
 *******************
 */
 
-.highlight_red {
-	color: #a40000;
-}
 
 /*
 *******************
@@ -475,9 +487,7 @@ footer nav a {
 *******************
 */
 
-.highlight_purple {
-	color: #cd97cf;
-}
+
 
 .percentage {
 	font-size: 425%;
