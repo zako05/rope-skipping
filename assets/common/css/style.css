@@ -15,7 +15,9 @@
 	font-style: normal;
 }
 
-li {	
+nav li,
+.soc_site li,
+.lang li {	
 	font-size: 25px;
 	display: inline;
 }	
@@ -25,7 +27,7 @@ li {
 }
 
 p {
-	font-size: 13px;
+	font-size: 14px;
 	color: #9a9a9a;
 	//line-height: 1.4;
 }
@@ -488,4 +490,35 @@ footer nav a {
 	float: left;
 	margin-top: 25px;
 	margin-bottom: 0px;
+}
+
+/*
+*******************
+* =training
+*******************
+*/
+
+.training th, td {
+	font-size: 14px;
+	color: #9a9a9a;
+	border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 20%;
+    height: 10%;
+}
+
+.training table {
+	width: 400px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.training li {
+	color: #9a9a9a;
+}
+
+.learning_list {
+	padding-left: 400px;
 }
