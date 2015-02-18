@@ -48,6 +48,10 @@ p {
 	color: #59af1f;
 }
 
+.highlight_orange {
+	color: #cf6f16;
+}
+
 /*
 *******************
 * =header
@@ -532,3 +536,25 @@ footer nav a {
 .learning_list {
 	padding-left: 400px;
 }
+
+/*
+*******************
+* =notice
+*******************
+*/
+
+/*
+*******************
+* =rope_skipping
+*******************
+*/
+
+.img_format img {
+	margin-right: 150px;
+	margin-left: 150px;
+}
+
+.content_2 h4 {
+	margin-top: 5px;
+}
+
