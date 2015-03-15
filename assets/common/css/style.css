@@ -127,7 +127,58 @@ nav a {
 	padding: 10px;
 	margin-left: 15px;
 }
+/*------------------------------------------------------------------------------------*/
+nav ul { /*UL list format*/
+	padding: 0 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
 
+nav ul li { /*Horizontal menu left-to-right*/
+	float:left;
+}
+/*First sub menu - Gallery->Fotogallery/Video*/
+nav ul ul { /* Default - don´t display submenu*/
+	display: none;
+}
+
+nav ul li:hover > ul { /*Display submenu on mouseover*/
+	display: block;
+}
+
+nav ul li a {
+	display: block; 
+	padding: 0px 10px;
+	text-decoration: none;
+}
+
+nav ul ul {
+	position: absolute; 
+	top: 100%;
+	z-index:1000;
+}
+
+nav ul ul li {
+	float: none; 
+	position: relative;
+}
+
+nav ul ul li a {/*Background color of submenu items, otherwise slider would be seen through text*/
+	background:#066685;
+}	
+
+nav ul ul li a:hover { /*Submenu backgroung on mouseover - Inherited*/
+	/*background: #4b545f;*/
+}
+/*Second submenu - Gallery->Fotogallery->...
+						  ->Video->...		*/
+/*nav ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:0;
+}*/
+/*--------------------------------------------------------------------------------------*/
 nav a:hover {
 	color: 00ffff;
 	background: #066685;
@@ -148,8 +199,6 @@ header nav {
 	margin-left: -55px;
 	margin-right: 15px;
 }
-
-
 
 .lang {
 	height: 50px;
@@ -460,9 +509,32 @@ footer nav a {
 
 /*
 *******************
-* =galery
+* =gallery
 *******************
 */
+
+.gallery .content_1 h3 {
+	padding-top: 25px;
+	padding-left: 75px;
+}
+
+.gallery .col-sm-4 img {
+	border-top: 5px solid #d1d1d1;
+	border-bottom: 5px solid #d1d1d1;
+	border-left: 10px solid #d1d1d1;
+	border-right: 10px solid #d1d1d1;
+}
+
+.gallery .section {
+	margin-bottom: 50px;
+}
+
+.gallery .section_line {
+	margin: 0px;
+	border-top: 0px solid #eee;
+	height: 5px;
+	background: -webkit-radial-gradient(50% 0%, 45% 5px, black 1%, white 100%);
+}
 
 /*
 *******************
