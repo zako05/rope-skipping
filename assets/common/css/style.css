@@ -370,6 +370,11 @@ h2 span {
 	margin-bottom: 25px;
 }
 
+.alliance {
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
 /*
 *******************
 * =footer
@@ -505,8 +510,6 @@ footer nav a {
 *******************
 */
 
-
-
 .percentage {
 	font-size: 425%;
 	height: 45px;
@@ -518,6 +521,15 @@ footer nav a {
 	float: left;
 	margin-top: 25px;
 	margin-bottom: 0px;
+}
+
+.percentage_from_taxes p a {
+	text-decoration: underline;
+}
+
+.percentage_from_taxes p a:hover {
+	text-decoration: none;
+	color: #b92ebf;
 }
 
 /*
