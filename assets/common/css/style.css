@@ -503,6 +503,14 @@ footer nav a {
 *******************
 */
 
+.faq p a {
+	text-decoration: underline;
+}
+
+.faq p a:hover {
+	text-decoration: none;
+	color: #a15252;
+}
 
 /*
 *******************
