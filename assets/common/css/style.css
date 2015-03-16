@@ -549,7 +549,7 @@ footer nav a {
 .training th, td {
 	font-size: 14px;
 	color: #9a9a9a;
-	border: 1px solid black;
+	border: 1px solid #9a9a9a;
     border-collapse: collapse;
     text-align: center;
     width: 20%;
