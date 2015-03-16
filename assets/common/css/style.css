@@ -147,6 +147,17 @@ nav ul li:hover > ul { /*Display submenu on mouseover*/
 	display: block;
 }
 
+nav ul li:hover {
+	color: 00ffff;
+	background: #066685;
+	background-image: -webkit-linear-gradient(top, #19c2c8, #066685);
+	background-image: -moz-linear-gradient(top, #19c2c8, #066685);
+	background-image: -ms-linear-gradient(top, #19c2c8, #066685);
+	background-image: -o-linear-gradient(top, #19c2c8, #066685);
+	background-image: linear-gradient(to bottom, #19c2c8, #066685);
+	text-decoration: none;
+}
+
 nav ul li a {
 	display: block; 
 	padding: 0px 10px;
@@ -168,7 +179,7 @@ nav ul ul li a {/*Background color of submenu items, otherwise slider would be s
 	background:#066685;
 }	
 
-nav ul ul li a:hover { /*Submenu backgroung on mouseover - Inherited*/
+nav ul ul li a:hover { /*Submenu background on mouseover - Inherited*/
 	/*background: #4b545f;*/
 }
 /*Second submenu - Gallery->Fotogallery->...
@@ -513,12 +524,12 @@ footer nav a {
 *******************
 */
 
-.gallery .content_1 h3 {
-	padding-top: 25px;
+.gallery h3 {
 	padding-left: 75px;
 }
 
 .gallery .col-sm-4 img {
+	margin-left: 25px;
 	border-top: 5px solid #d1d1d1;
 	border-bottom: 5px solid #d1d1d1;
 	border-left: 10px solid #d1d1d1;
