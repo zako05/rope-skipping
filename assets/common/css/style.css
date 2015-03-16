@@ -324,6 +324,12 @@ h2 span {
 	color: #666666;
 }
 
+.main h4 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #666666;
+}
+
 .line-content-top {
 	margin: 0px;
 	border: 0px;
@@ -375,6 +381,20 @@ h2 span {
 	margin-right: 80px;
 }
 
+.multi_title {
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+
+.multi_title h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.multi_title h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 /*
 *******************
 * =footer
@@ -611,10 +631,14 @@ footer nav a {
 	border: 4px solid #d1d1d1;
 }
 
-.events .content_1 h3 {
+.events .multi_title {
 	padding-top: 40px;
-	padding-bottom: 75px;
+	padding-bottom: 25px;
 	padding-left: 245px;
+}
+
+.events .multi_title h3 {
+	padding-left: 0px;
 }
 
 /*
