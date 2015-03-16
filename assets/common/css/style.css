@@ -435,6 +435,10 @@ footer nav a {
 	margin-right: 15px;
 }
 
+.soc_site a, a:hover {
+	text-decoration: none;
+}
+
 /*
 *******************
 * =copyright
