@@ -19,10 +19,6 @@ header {
 	border-bottom: solid 1px #ffffff;
 }
 
-ul {
-	color: #9a9a9a;
-}
-
 p {
 	font-size: 14px;
 	color: #9a9a9a;
@@ -38,7 +34,7 @@ nav li,
 
 .selected,
 .lang .selected {
-	color: 00ffff;
+	color: #00ffff;
 }
 
 .highlight_purple {
@@ -117,21 +113,14 @@ header h1 a {
 *******************
 */
 
-nav {
-	font-family: 'BebasNeue';
-	margin-top: 20px;
-}
-
-nav a {
-	color: #1eafb5;
-	padding: 10px;
-	margin-left: 15px;
-}
-
-/*------------------------------------------------------------------------------------*/
-
 #nav {
-
+	height: 50px;
+	float: right;
+	//clear: right;
+	margin-top: 14px;
+	margin-bottom: 20px;
+	//margin-left: -55px;
+	margin-right: 15px;
 }
 	#nav > a {
 		display: none;
@@ -143,28 +132,36 @@ nav a {
 	/* first level */
 
 	#nav > ul {
-
+		padding: 0px;
+		margin: 0px;
 	}
 		#nav > ul > li {
 			float: left;
 		}
+			#nav > ul > li:hover {
+				background: #066685;	
+			}
 
 	/* second level */
 
 	#nav li ul {
 		position: absolute;
 		display: none;
-		left: -41;
+		background:#066685;
+		padding: 0px;
+		margin: 0px;
 	}
 		#nav li:hover ul {
 			display: block;
 			z-index:1000;
+			padding: 0px;
+			margin: 0px;
 		}
-		
+/*	
 @media only screen and ( max-width: 40em) {
 	
 	html {
-		font-size: 75%; /* 12 */
+		font-size: 75%; 
 	}	
 
 	#nav {
@@ -173,8 +170,8 @@ nav a {
 		left: auto;
 	}
 		#nav > a {
-			width: 3.125em; /* 50 */
-			height: 3.125em; /* 50 */
+			width: 3.125em; 
+			height: 3.125em; 
 			text-align: left;
 			text-indent: -9999px;
 			background-color: #e15a1f;
@@ -198,7 +195,7 @@ nav a {
 			display: block;
 		}
 
-		/* first level */
+		
 
 		#nav > ul {
 			position: absolute;
@@ -216,14 +213,23 @@ nav a {
 				float: none;
 			}
 
-		/* second level */
+		
 
 		#nav li ul {
 			position: static;
 		}
 }
+*/
 
-/*--------------------------------------------------------------------------------------*/
+nav {
+	font-family: 'BebasNeue';
+}
+
+nav a {
+	color: #1eafb5;
+	padding: 10px;
+	//margin-left: 15px;
+}
 
 nav a:hover {
 	color: 00ffff;
@@ -234,16 +240,6 @@ nav a:hover {
 	background-image: -o-linear-gradient(top, #19c2c8, #066685);
 	background-image: linear-gradient(to bottom, #19c2c8, #066685);
 	text-decoration: none;
-}
-
-header nav {
-	height: 50px;
-	float: right;
-	clear: right;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	margin-left: -55px;
-	margin-right: 15px;
 }
 
 .lang {
