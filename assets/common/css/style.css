@@ -127,69 +127,104 @@ nav a {
 	padding: 10px;
 	margin-left: 15px;
 }
+
 /*------------------------------------------------------------------------------------*/
-nav ul { /*UL list format*/
-	padding: 0 0px;
-	list-style: none;
-	position: relative;
-	display: inline-table;
+
+#nav {
+
+}
+	#nav > a {
+		display: none;
+	}
+	#nav li {
+		position: relative;
+	}	
+
+	/* first level */
+
+	#nav > ul {
+
+	}
+		#nav > ul > li {
+			float: left;
+		}
+
+	/* second level */
+
+	#nav li ul {
+		position: absolute;
+		display: none;
+		left: -41;
+	}
+		#nav li:hover ul {
+			display: block;
+			z-index:1000;
+		}
+		
+@media only screen and ( max-width: 40em) {
+	
+	html {
+		font-size: 75%; /* 12 */
+	}	
+
+	#nav {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+		#nav > a {
+			width: 3.125em; /* 50 */
+			height: 3.125em; /* 50 */
+			text-align: left;
+			text-indent: -9999px;
+			background-color: #e15a1f;
+			position: relative;			
+		}
+			#nav > a:before,
+			#nav > a:after {
+				position: absolute;
+				border: 2px solid #fff;
+				top: 35%;
+				left: 25%;
+				right: 25%;
+				content: '';
+			}
+			#nav > a:after {
+				top:60%;
+			}
+
+		#nav:not ( :target ) > a:first-of-type,
+		#nav:target > a:last-of-type {
+			display: block;
+		}
+
+		/* first level */
+
+		#nav > ul {
+			position: absolute;
+			display: none;
+			left: 0;
+			right: 0;
+			height: auto;
+		}
+
+			#nav:target > ul {
+				display: block;
+			}
+			#nav > ul > li {
+				width: 100%;
+				float: none;
+			}
+
+		/* second level */
+
+		#nav li ul {
+			position: static;
+		}
 }
 
-nav ul li { /*Horizontal menu left-to-right*/
-	float:left;
-}
-/*First sub menu - Gallery->Fotogallery/Video*/
-nav ul ul { /* Default - don´t display submenu*/
-	display: none;
-}
-
-nav ul li:hover > ul { /*Display submenu on mouseover*/
-	display: block;
-}
-
-nav ul li:hover {
-	color: 00ffff;
-	background: #066685;
-	background-image: -webkit-linear-gradient(top, #19c2c8, #066685);
-	background-image: -moz-linear-gradient(top, #19c2c8, #066685);
-	background-image: -ms-linear-gradient(top, #19c2c8, #066685);
-	background-image: -o-linear-gradient(top, #19c2c8, #066685);
-	background-image: linear-gradient(to bottom, #19c2c8, #066685);
-	text-decoration: none;
-}
-
-nav ul li a {
-	display: block; 
-	padding: 0px 10px;
-	text-decoration: none;
-}
-
-nav ul ul {
-	position: absolute; 
-	top: 100%;
-	z-index:1000;
-}
-
-nav ul ul li {
-	float: none; 
-	position: relative;
-}
-
-nav ul ul li a {/*Background color of submenu items, otherwise slider would be seen through text*/
-	background:#066685;
-}	
-
-nav ul ul li a:hover { /*Submenu background on mouseover - Inherited*/
-	/*background: #4b545f;*/
-}
-/*Second submenu - Gallery->Fotogallery->...
-						  ->Video->...		*/
-/*nav ul ul ul {
-	position: absolute; 
-	left: 100%; 
-	top:0;
-}*/
 /*--------------------------------------------------------------------------------------*/
+
 nav a:hover {
 	color: 00ffff;
 	background: #066685;
