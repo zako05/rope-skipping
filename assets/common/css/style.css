@@ -121,9 +121,30 @@ header h1 a {
 	margin-bottom: 20px;
 	//margin-left: -55px;
 	margin-right: 15px;
+	font-family: 'BebasNeue';
 }
+	#nav a {
+		color: #1eafb5;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 4px;
+		padding-bottom: 4px; 
+	}
+	#nav a:hover {
+		color: 00ffff;
+		background: #066685;
+		background-image: -webkit-linear-gradient(top, #19c2c8, #066685);
+		background-image: -moz-linear-gradient(top, #19c2c8, #066685);
+		background-image: -ms-linear-gradient(top, #19c2c8, #066685);
+		background-image: -o-linear-gradient(top, #19c2c8, #066685);
+		background-image: linear-gradient(to bottom, #19c2c8, #066685);
+		text-decoration: none;
+	}
 	#nav > a {
 		display: none;
+	}
+	#nav ul li {
+		margin-right: 1px; /* this 1px missing on normal screen size, but now missing on smaller screen size - awful fix */
 	}
 	#nav li {
 		position: relative;
@@ -132,14 +153,20 @@ header h1 a {
 	/* first level */
 
 	#nav > ul {
-		padding: 0px;
-		margin: 0px;
+		//padding: 0px;
+		//margin: 0px;
 	}
 		#nav > ul > li {
 			float: left;
 		}
-			#nav > ul > li:hover {
-				background: #066685;	
+			#nav > ul > li:hover > a {
+				color: 00ffff;
+				background: #066685;
+				background-image: -webkit-linear-gradient(top, #19c2c8, #066685);
+				background-image: -moz-linear-gradient(top, #19c2c8, #066685);
+				background-image: -ms-linear-gradient(top, #19c2c8, #066685);
+				background-image: -o-linear-gradient(top, #19c2c8, #066685);
+				background-image: linear-gradient(to bottom, #19c2c8, #066685);	
 			}
 
 	/* second level */
@@ -147,15 +174,16 @@ header h1 a {
 	#nav li ul {
 		position: absolute;
 		display: none;
+		top: 100%;
 		background:#066685;
 		padding: 0px;
 		margin: 0px;
 	}
 		#nav li:hover ul {
 			display: block;
-			z-index:1000;
-			padding: 0px;
-			margin: 0px;
+			z-index: 1000;
+			//padding: 0px;
+			//margin: 0px;
 		}
 /*	
 @media only screen and ( max-width: 40em) {
@@ -221,16 +249,14 @@ header h1 a {
 }
 */
 
+/* add it to the footer and delete it 
 nav {
 	font-family: 'BebasNeue';
 }
-
 nav a {
 	color: #1eafb5;
 	padding: 10px;
-	//margin-left: 15px;
 }
-
 nav a:hover {
 	color: 00ffff;
 	background: #066685;
@@ -241,6 +267,7 @@ nav a:hover {
 	background-image: linear-gradient(to bottom, #19c2c8, #066685);
 	text-decoration: none;
 }
+*/
 
 .lang {
 	height: 50px;
