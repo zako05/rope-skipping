@@ -123,13 +123,6 @@ header h1 a {
 	margin-right: 15px;
 	font-family: 'BebasNeue';
 }
-	#nav a {
-		color: #1eafb5;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 4px;
-		padding-bottom: 4px; 
-	}
 	#nav a:hover {
 		color: 00ffff;
 		background: #066685;
@@ -148,6 +141,14 @@ header h1 a {
 	}
 	#nav li {
 		position: relative;
+	}
+	#nav li a {
+		display: block;
+		color: #1eafb5;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 4px;
+		padding-bottom: 4px;
 	}	
 
 	/* first level */
