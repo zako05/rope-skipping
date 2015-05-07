@@ -183,6 +183,10 @@ nav a {
 	
 @media only screen and ( max-width: 40em ) { /* 640 */
 
+	.banner_slider {
+		display: none;
+	}
+
 /* hack, would be better to fix the image */
 	.col-sm-5 > h1 > a {
 		width: 335px;
@@ -192,6 +196,7 @@ nav a {
 		padding-left: 0px;
 	}
 
+/* nav menu */
 	#nav {
 		margin: 10px 10px 0px 0px;
 	}	
