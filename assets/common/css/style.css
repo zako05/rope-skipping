@@ -540,16 +540,28 @@ footer {
 		float: none;
 		margin: 0px;
 	}
-		footer #nav > ul {
-			padding: 0px;
+
+	/* first level */
+	
+	footer #nav > ul {
+		padding: 0px;
+	}
+		footer #nav > ul > li {
+			display: inline-block;
+			float: none;
 		}
-			footer #nav > ul > li {
-				display: inline-block;
-				float: none;
+
+		/* second level */
+		
+		footer #nav li ul {
+			top: -200%; /* upside down submenu in footer nav menu :) */ 
+		}
+			footer #nav li:hover ul {
+				text-align: left;
 			}
-				footer #nav li:hover ul {
-					text-align: left;
-				}
+
+	/* social sites */	
+
 	footer .soc_site {
 		width: 100%;
 		//margin: 10px auto;
