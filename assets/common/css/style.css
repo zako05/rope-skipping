@@ -183,7 +183,7 @@ nav a {
 	}
 		#nav li:hover ul {
 			display: block;
-			z-index: 1000;
+			z-index: 1000; /* delete this after refactor slider */
 		}
 	
 @media only screen and ( max-width: 768px ) {
@@ -547,6 +547,9 @@ footer {
 				display: inline-block;
 				float: none;
 			}
+				footer #nav li:hover ul {
+					text-align: left;
+				}
 	footer .soc_site {
 		width: 100%;
 		//margin: 10px auto;
