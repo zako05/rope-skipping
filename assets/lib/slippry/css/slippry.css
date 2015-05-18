@@ -114,7 +114,7 @@
 /* element that wraps the slides */
 .sy-slides-wrap {
   position: relative;
-  height: 100%;
+  //height: 100%; /* caused set bigger height for slider */
   width: 100%; }
   .sy-slides-wrap:hover .sy-controls {
     display: block; }
@@ -306,7 +306,8 @@
   *zoom: 1;
   display: block;
   width: 100%;
-  margin: 1em 0 0;
+  height: 20px;
+  margin: 0.5em 0 0.5em 0;
   padding: 0;
   list-style: none;
   text-align: center; }
@@ -319,7 +320,7 @@
     -webkit-border-radius: 50%;
     border-radius: 50%; }
     .sy-pager li.sy-active a {
-      background-color: #e24b70; }
+      background-color: #00ffff; }
     .sy-pager li a {
       width: 100%;
       height: 100%;
