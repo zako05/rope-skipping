@@ -209,13 +209,13 @@ h2 {
 		text-shadow: 2px 2px 6px #000000;
 	}
 
-.middle_text {
+.middle-text {
 	font-size: 36px;
 	margin-top: -20px;
 	margin-bottom: -20px;
 }
 
-.banner_text {
+.banner-text {
 	color: #1eafb5;
 	font-size: 18px;
 	text-align: justify;
@@ -224,6 +224,7 @@ h2 {
 
 #slippry-slider {
 	margin: 25px 0 0 0;
+	padding: 21px 0 0 0; /* probably would be better to resize the text 'Vitajte' */
 }
 
 /*
