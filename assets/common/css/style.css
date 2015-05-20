@@ -368,7 +368,9 @@ h2 span {
 }
 
 .content_2 img {
-	border: 4px solid #d1d1d1;
+	//border: 4px solid #d1d1d1;
+	box-shadow: 1px 1px 1px;
+	border-radius: 8px;
 }
 
 .content_2 h3 {
@@ -473,11 +475,13 @@ footer nav a {
 	text-align: justify;
 }
 
-.about .col-sm-4 img {
+.images-members > div > img {
 	border-top: 5px solid #d1d1d1;
 	border-bottom: 5px solid #d1d1d1;
 	border-left: 120px solid #d1d1d1;
 	border-right: 120px solid #d1d1d1;
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 1px 1px 1px;
 }
 
 .about .section {
@@ -507,15 +511,9 @@ footer nav a {
 	height: 400px;
 	width: 750px;
 	margin-top: 25px;
-
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px;
 }
-
-#gmap_canvas img {
-	max-width:none!important;
-	background:none!important;
-}
-
-
 
 .contact textarea {
 	margin-left: 48px;
