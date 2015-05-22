@@ -3,20 +3,23 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/common/css/style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/common/img/favicon.png"/>
 	<title>Crazy Jump</title>
 	<script type="text/javascript" src="assets/lib/jquery/js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="assets/lib/jquery/js/jssor.slider.mini.js"></script>
 	<script type="text/javascript" src="assets/common/js/banner.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/js/DoubleTapToGo.js"></script>
+	<script type="text/javascript" scr="assets/common/js/taptogo.js"></script>
 </head>
 <body>
 	<div class="container">
 <!-- =header -->
 		<header class="row">
-			<div class="row nav_menu">
-				<div class="col-sm-5">
+			<div class="row">
+				<div class="col-sm-2 col-md-4 col-lg-6">
 					<h1><a href="index.html">Crazy Jump</a></h1>
 				</div>
-				<div class="col-sm-7">
+				<div class="col-sm-10 col-md-8 col-lg-6">
 					<div class="lang">
 						<ul>
 							<li><a href="index.html" class="selected">SK</a></li>
@@ -24,15 +27,23 @@
 							<li><a href="#">EN</a></li>
 						</ul>
 					</div>
-					<nav>
+					<nav id="nav" role="navigation">
+						<a href="#nav" title="Show navigation">Show navigation</a>
+						<a href="#" title-"Hide navigation">Hide navigation</a>
 						<ul>
 							<li><a href="index.html" class="selected">Home</a></li>
 							<li><a href="about.html">O nás</a></li>
-							<li><a href="#">Galéria</a></li>
+							<li>
+								<a href="?galeria" aria-haspopup="true">Galéria</a>
+								<ul>
+									<li><a href="/">Fotogaléria</a></li>
+									<li><a href="/">Videá</a></li>
+								</ul>
+							</li>
 							<li><a href="contact.html">Kontakt</a></li>
 							<li><a href="faq.html">Faq</a></li>
 							<li><a href="percentage_from_taxes.html">2% z dane</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="/">Blog</a></li>
 						</ul>						
 					</nav>
 				</div>
@@ -40,7 +51,7 @@
 	<!-- =banner -->
 			<div class="row banner">
 				<hr class="line-banner-top">
-				<div class="col-md-6">
+				<div class="col-md-6 banner_title">
 					<h2>
 						<span class="vitajte">Vitajte</span>
 						<span class="na_stranke">na stránke</span>
@@ -50,7 +61,7 @@
 						Sme partia ľudí, ktorí cez švihadlo skáču nejaký ten rok. Chceme rozšíriť tento šport aj na Slovensko, preto vedieme kurzy pre deti, mládež i dospelých a organizujeme rôzne workshopy, prezentácie a vystúpenia po celom Slovensku.
 					</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 banner_slider">
 					<div id="slider1_container">
 						<div u="slides" class="slider" style="cursor: move; position: absolute; overflow: hidden; left: 23px; top: 30px; width: 540px; height: 285px;">
 							<div><img u="image" src="assets/common/img/banner1_540x285px.png" /></div>
@@ -82,7 +93,7 @@
 					<img src="assets/common/img/clock_small.png" alt="clock">
 					<h3>Tréningy</h3>
 					<p>
-						Tréningy sú každý PIATOK o 18:00h. na SOŠ Polygrafickej v Rači a STREDU o 16:00h. na Montessori škole v Lamači. Na tréningy sa môžte prihlásiť kedykoľvek počas roka. Učíme deti od 5 - 14 rokov, mládež od 15 - 17 rokov a dospelých od 18 - 120 rokov. V prípade akýchkoľvek otázok nás kontaktujte na tel. čísle: 0948 329 093 alebo nám napíšte na info@crazyjump.sk
+						Tréningy sú každý PIATOK o 18:00h. na SOŠ Polygrafickej v Rači a STREDU o 16:00h. na Montessori škole v Lamači. Na tréningy sa môžete prihlásiť kedykoľvek počas roka. Učíme deti od 5 - 14 rokov, mládež od 15 - 17 rokov a dospelých od 18 - 120 rokov. V prípade akýchkoľvek otázok nás kontaktujte na tel. čísle: 0948 329 093 alebo nám napíšte na info@crazyjump.sk
 					</p>
 					<p><a href="training.html">Viac tu...</a></p>
 				</div>
@@ -165,12 +176,17 @@
 		</div>
 <!-- =footer -->
 		<footer class="row">
-			<div class="col-md-8">
-				<nav>
+			<div class="col-sm-12 col-md-12 col-lg-7">
+				<nav id="nav" role="navigation">
 					<ul>
 						<li><a href="index.html" class="selected">Home</a></li>
 						<li><a href="about.html">O nás</a></li>
-						<li><a href="#">Galéria</a></li>
+						<li><a href="#">Galéria</a>
+							<ul>								
+								<li><a href="video.html">Videá</a></li>
+								<li><a href="gallery.html">Fotogaléria</a></li>
+							</ul>
+						</li>
 						<li><a href="contact.html">Kontakt</a></li>
 						<li><a href="#">Faq</a></li>
 						<li><a href="#">2% z dane</a></li>
@@ -178,7 +194,7 @@
 					</ul>				
 				</nav>
 			</div>
-			<div class="col-md-4">
+			<div class="col-xs-12 col-sm-12 col-lg-5">
 				<ul class="soc_site">
 						<li>
 							<a href="https://www.facebook.com/crazyjump.sk">
