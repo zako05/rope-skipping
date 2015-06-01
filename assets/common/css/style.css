@@ -4,7 +4,6 @@
  *******************
 */
 
-
 /* fix -> stop horizontal scrolling */
 html, body {
     max-width: 100%;
@@ -190,13 +189,9 @@ nav a {
 			z-index: 1000; /* delete this after refactor slider */
 		}
 	
-@media only screen and ( max-width: 768px ) {
+@media screen and ( max-width: 768px ) {
 
-	.banner_slider {
-		display: none;
-	}
-
-/* nav menu */
+	/* nav menu */
 	#nav {
 		margin: 10px 10px 0px 0px;
 	}	
@@ -288,26 +283,6 @@ nav a {
 			}
 }
 
-/* add it to the footer and delete it 
-nav {
-	font-family: 'BebasNeue';
-}
-nav a {
-	color: #1eafb5;
-	padding: 10px;
-}
-nav a:hover {
-	color: 00ffff;
-	background: #066685;
-	background-image: -webkit-linear-gradient(top, #19c2c8, #066685);
-	background-image: -moz-linear-gradient(top, #19c2c8, #066685);
-	background-image: -ms-linear-gradient(top, #19c2c8, #066685);
-	background-image: -o-linear-gradient(top, #19c2c8, #066685);
-	background-image: linear-gradient(to bottom, #19c2c8, #066685);
-	text-decoration: none;
-}
-*/
-
 /* language selection */
 
 .lang {
@@ -380,6 +355,12 @@ h2 {
 #slippry-slider {
 	margin: 25px 0 0 0;
 	padding: 21px 0 0 0; /* probably would be better to resize the text 'Vitajte' */
+}
+
+@media screen and ( max-width: 768px ) {
+	#slippry-slider {
+		display: none;
+	}
 }
 
 /*
