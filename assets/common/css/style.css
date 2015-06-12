@@ -201,7 +201,7 @@ nav a {
 			z-index: 1000; /* delete this after refactor slider */
 		}
 	
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 960px ) {
 
 	/* nav menu */
 	#nav {
@@ -246,7 +246,7 @@ nav a {
 	/* first level */
 
 	#nav > ul {
-		width: 162px;
+		width: 157px;
 		height: auto;
 		display: none;
 		position: absolute;
@@ -369,6 +369,12 @@ h2 {
 	padding: 21px 0 0 0; /* probably would be better to resize the text 'Vitajte' */
 }
 
+@media screen and ( max-width: 1199px ) {
+	.banner-text {
+		font-size: 16px;
+	}
+}
+
 @media screen and ( max-width: 768px ) {
 	#slippry-slider {
 		display: none;
@@ -404,7 +410,8 @@ h2 {
 	text-align: justify;
 }
 #main img {
-	float: left;
+	//float: left;
+	max-width: 100%;
 }
 #main h3, h4 {
 	margin: 0 0 0;
@@ -412,7 +419,9 @@ h2 {
 #main > div > section {
 	margin-bottom: 25px;
 }
-
+.small-icon > img {
+	float: left;
+}
 .small-icon > h3 {
 		height: 45px;
 		padding-top: 5px;
@@ -447,7 +456,7 @@ h2 {
 
 
 
-.image-large-size > img {
+.large-icon > img {
 	box-shadow: 1px 1px 1px;
 	border-radius: 8px;
 }
