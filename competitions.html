@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/lib/slippry/css/slippry.css">
 	<link rel="stylesheet" href="assets/common/css/style.css">
@@ -54,7 +55,7 @@
 			<!-- =banner -->
 			<section id="banner" class="row">			
 				<!-- =welcome -->
-				<section class="col-lg-6">
+				<section class="col-md-6 col-lg-6">
 					<h2>
 						<span>Vitajte</span>
 						<span class="middle-text">na stránke</span>
@@ -65,7 +66,7 @@
 					</p>
 				</section>
 				<!-- =slippry slider -->
-				<section class="col-lg-6">
+				<section class="col-md-6 col-lg-6">
 					<div id="slippry-slider">
 						<ul id="slippry-slider-img">
 							<li><img src="assets/common/img/banner1_540x285px.png" alt=""></li>
@@ -79,17 +80,15 @@
 			</section>	
 		</header>	
 		<hr class="line-banner-bottom">
-<!-- =main -->		
-		<div class="row main">
-			<div class="row content_1">
-				<hr class="line-content-top">
-				<div class="col-sm-12">
-<!-- need to be refactored	-->
+		<hr class="line-main-top">
+		<!-- =main -->		
+		<main id="main">
+			<section class="row">
+				<section class="col-sm-12 col-md-12 col-lg-12 large-icon">
 					<div class="competition_title">
 						<img src="assets/common/img/competition.png" alt="competition">
 						<h3>Súťaže</h3>
 					</div>
-<!-- need to be refactored	-->
 					<div class="competition_rules">
 						<img src="assets/common/img/download_small.png" alt="download">
 						<h3><a href="#">Stianuť v .pdf</a></h3>
@@ -97,10 +96,11 @@
 				<!--	<p>Súťaže</p>	-->
 				<!--	<p>Pokyny</p>	-->
 				<!--	<p>Pravidlá</p>	-->				
-				</div>
-			</div>
+				</section>
+			</section>
 			<hr class="line-content-bottom">
-		</div>
+		</main>
+		<hr class="line-main-bottom">
 		<!-- =footer -->
 		<footer class="row">
 			<div class="col-sm-12 col-md-12 col-lg-7">
