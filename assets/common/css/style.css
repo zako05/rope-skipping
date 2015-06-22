@@ -220,7 +220,7 @@ nav a {
 			text-align: left;
 			text-indent: -9999px;
 			position: relative;
-			z-index: 1000px; /* hack, would be better to find better option */
+			z-index: 1000; /* hack, would be better to find better option */
 		}
 			#nav > a:before,
 			#nav > a:after {
@@ -448,6 +448,17 @@ h2 {
 		padding-top: 0px !important;
 	}
 }
+@media screen and ( max-width: 767px ) {
+	.large-icon > img {
+		width: 40%;
+	}
+}
+@media screen and ( max-width: 640px ) {
+	.large-icon > img {
+		width: 50%;
+	}
+}
+
 
 /*
 .competition_schools {
@@ -661,7 +672,7 @@ footer {
 		border-radius: 10px;
 		box-shadow: 1px 1px 1px;
 	}
-	#main a:link {
+	#main > section > section > a:link {
 		color: inherit;
 	}
 }
@@ -728,24 +739,31 @@ footer {
 *******************
 */
 
-.training th, td {
-	font-size: 14px;
-	color: #9a9a9a;
-	border: 1px solid #9a9a9a;
-    border-collapse: collapse;
-    text-align: center;
-    width: 20%;
-    height: 10%;
-}
-.training table {
-	width: 400px;
+.training > .container > #main > section > section > table {
+	width: 50%;
 	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
 }
+	.training > .container > #main > section > section > table > thead > tr > th,
+	.training > .container > #main > section > section > table > tbody > tr> td {
+		font-size: 14px;
+		color: #9a9a9a;
+		border: 1px solid #9a9a9a;
+    	border-collapse: collapse;
+    	text-align: center;
+    	width: 20%;
+    	height: 10%;
+	}
 .learning_list {
 	padding-left: 400px;
 	color: #9a9a9a;
+}
+
+@media screen and ( max-width: 1024px) {
+	.training > .container > #main > section > section > table {
+		width: 100%;
+	}
 }
 
 /*
