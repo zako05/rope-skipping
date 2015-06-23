@@ -421,6 +421,11 @@ h2 {
 .sponsor-all {
 	margin-top: 14px;
 }
+.large-icon-teacher > img,
+.large-icon-teacher > div > img {
+	box-shadow: 1px 1px 1px;
+	border-radius: 8px;
+}
 .large-icon > img,
 .large-icon > div > img {
 	box-shadow: 1px 1px 1px;
@@ -755,14 +760,26 @@ footer {
     	width: 20%;
     	height: 10%;
 	}
-.learning_list {
-	padding-left: 400px;
-	color: #9a9a9a;
+.training-experience-list > ul > li {
+	position: relative;
+	left: 37%;
 }
 
 @media screen and ( max-width: 1024px) {
 	.training > .container > #main > section > section > table {
 		width: 100%;
+	}
+}
+@media screen and ( max-width: 1199px) {
+	.training-experience-list > ul > li {
+	position: relative;
+	left: 45%;
+	}
+}
+@media screen and ( max-width: 768px) {
+	.training-experience-list > ul > li {
+	position: relative;
+	left: 15%;
 	}
 }
 
