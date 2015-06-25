@@ -238,6 +238,10 @@ nav a {
 			#nav > a:last-of-type:after {
 				border: 2px solid #00ffff;
 			}
+			#nav > a:hover:before,
+			#nav > a:hover:after {
+				border: 2px solid #00ffff;
+			}
 
 		#nav:target {
 			background: #066685;
@@ -473,18 +477,8 @@ h2 {
 */
 
 /* =main_lines */
-.line-main-top {
+.line-main-top, .line-main-middle, .line-main-bottom  {
 	margin-top: 25px;
-	margin-bottom: 25px;
-	border: 0px;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(170,170,170,0.5), rgba(0,0,0,0));
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(170,170,170,0.5), rgba(0,0,0,0));
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(170,170,170,0.5), rgba(0,0,0,0));
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(170,170,170,0.5), rgba(0,0,0,0));
-}
-.line-main-middle, .line-main-bottom {
-	margin-top: 0px;
 	margin-bottom: 25px;
 	border: 0px;
 	height: 1px;
