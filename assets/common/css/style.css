@@ -37,9 +37,13 @@ h4 {
 	color: #666666;
 }
 
-p {
+p,
+p > strong > a {
 	font-size: 14px;
 	color: #9a9a9a;
+}
+p > strong > a:hover {
+	color: #ee69a0;
 }
 
 nav li,
@@ -836,11 +840,14 @@ footer {
 *******************
 */
 
-.camp > .container > #main > section > section > h4 {
+.camp > .container > #main > section > section > h4,
+.camp > .container > #main > section > section > h4 > a {
 	margin-top: 14px;
 	color: #ee69a0;
-
 }
+	.camp > .container > #main > section > section > h4 > a:hover {
+		color: #666666;
+	}
 .camp .second_camp ul {
 	list-style-type: none;
 	padding: 0px;
