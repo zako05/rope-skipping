@@ -59,7 +59,7 @@ nav li,
 }
 
 .highlight_blue {
-	color: #01bfd2;
+	color: #66d0de;
 }
 
 .highlight_red {
@@ -67,11 +67,11 @@ nav li,
 }
 
 .highlight_green {
-	color: #59af1f;
+	color: #8dc570;
 }
 
 .highlight_orange {
-	color: #cf6f16;
+	color: #e9a06d;
 }
 
 .highlight_brown {
@@ -439,9 +439,12 @@ h2 {
 	float: left;
 }
 .small-icon > h3 {
-		height: 45px;
-		padding-top: 5px;
-		padding-left: 65px;
+	height: 45px;
+	padding-top: 5px;
+	padding-left: 65px;
+}
+.small-icon-align-middle > h3 {
+	padding-top: 17px;
 }
 @media screen and ( max-width: 1024px ) {
 	.small-icon > img {
