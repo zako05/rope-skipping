@@ -42,6 +42,12 @@ p {
 	color: #9a9a9a;
 }
 
+span {
+	font-size: 25px;
+	font-weight: normal;
+	color: #666666;
+}
+
 nav li,
 .soc_site li,
 .lang li {	
@@ -616,37 +622,7 @@ footer {
 	}
 }
  
-/*
-*******************
-* =gallery
-*******************
-*/
-
-.gallery h3 {
-	padding-left: 75px;
-}
-
-.gallery .col-sm-4 img {
-	margin-left: 25px;
-	border-top: 5px solid #d1d1d1;
-	border-bottom: 5px solid #d1d1d1;
-	border-left: 10px solid #d1d1d1;
-	border-right: 10px solid #d1d1d1;
-}
-
-.gallery .section {
-	margin-bottom: 50px;
-}
-
-.gallery .section_line {
-	margin: 0px;
-	border-top: 0px solid #eee;
-	height: 5px;
-	background: -webkit-radial-gradient(50% 0%, 45% 5px, black 1%, white 100%);
-}
-
-/*
-*******************
+/*******************
 * =Responsive gallery
 *******************
 */
@@ -694,9 +670,11 @@ footer {
    -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
 }
+
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
    margin-bottom: 0;
 }
+
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
    .box {
@@ -704,6 +682,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 100%;
    }
 }
+
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
    .box {
@@ -711,6 +690,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 50%;
    }
 }
+
 @media only screen and (max-width : 1050px) and (min-width : 651px) {
    /* Small desktop / ipad view: 3 tiles */
    .box {
@@ -718,6 +698,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 33.3%;
    }
 }
+
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
    /* Medium desktop: 4 tiles */
    .box {
