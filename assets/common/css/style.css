@@ -905,3 +905,15 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	padding: 0px;
 	margin: 0px;
 }
+
+/*Pouzite v Header a vo Footer kvoli pozadiu, asi bude treba upratat:)*/
+.container2 {
+	/*margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;*/
+	background: -webkit-linear-gradient(rgba(1,56,67,1), rgba(15,32,28,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(1,56,67,1), rgba(15,32,28,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(1,56,67,1), rgba(15,32,28,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(1,56,67,1), rgba(15,32,28,1)); /* Standard syntax (must be last) */
+}
