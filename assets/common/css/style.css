@@ -37,9 +37,13 @@ h4 {
 	color: #666666;
 }
 
-p {
+p,
+p > strong > a {
 	font-size: 14px;
 	color: #9a9a9a;
+}
+p > strong > a:hover {
+	color: #ee69a0;
 }
 
 span {
@@ -65,7 +69,7 @@ nav li,
 }
 
 .highlight_blue {
-	color: #01bfd2;
+	color: #66d0de;
 }
 
 .highlight_red {
@@ -73,11 +77,11 @@ nav li,
 }
 
 .highlight_green {
-	color: #59af1f;
+	color: #8dc570;
 }
 
 .highlight_orange {
-	color: #cf6f16;
+	color: #e9a06d;
 }
 
 .highlight_brown {
@@ -445,9 +449,12 @@ h2 {
 	float: left;
 }
 .small-icon > h3 {
-		height: 45px;
-		padding-top: 5px;
-		padding-left: 65px;
+	height: 45px;
+	padding-top: 5px;
+	padding-left: 65px;
+}
+.small-icon-align-middle > h3 {
+	padding-top: 17px;
 }
 @media screen and ( max-width: 1024px ) {
 	.small-icon > img {
@@ -895,11 +902,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 *******************
 */
 
-.camp > .container > #main > section > section > h4 {
+.camp > .container > #main > section > section > h4,
+.camp > .container > #main > section > section > h4 > a {
 	margin-top: 14px;
 	color: #ee69a0;
-
 }
+	.camp > .container > #main > section > section > h4 > a:hover {
+		color: #666666;
+	}
 .camp .second_camp ul {
 	list-style-type: none;
 	padding: 0px;
