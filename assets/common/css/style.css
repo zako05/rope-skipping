@@ -430,7 +430,8 @@ h2 {
 	margin-top: 14px;
 }
 .large-icon > img,
-.large-icon > div > img {
+.large-icon > div > img,
+.large-icon > div {
 	box-shadow: 1px 1px 1px;
 	border-radius: 8px;
 }
@@ -629,13 +630,13 @@ footer {
 */
 .wrap {
    overflow: hidden;
-   margin: 10px;
+   //margin: 10px;
 }
 .box {
    float: left;
    position: relative;
    width: 33.333%;
-   padding-bottom: 25%; /*Nastavenie vysky obrazka v boxe*/
+   padding-bottom: 19%; /*Nastavenie vysky obrazka v boxe*/
 }
 .boxInner {
    position: absolute;
@@ -680,7 +681,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
    /* Smartphone view: 1 tile */
    .box {
       width: 100%;
-      padding-bottom: 100%;
+      padding-bottom: 58%;
    }
 }
 
@@ -688,7 +689,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
    /* Tablet view: 2 tiles */
    .box {
       width: 50%;
-      padding-bottom: 50%;
+      padding-bottom: 30%;
    }
 }
 
@@ -696,15 +697,23 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
    /* Small desktop / ipad view: 3 tiles */
    .box {
       width: 33.3%;
-      padding-bottom: 33.3%;
+      padding-bottom: 20%;
+   }
+}
+
+@media only screen and (max-width : 1199px) and (min-width : 1049px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 33,333%;
+      padding-bottom: 19%;
    }
 }
 
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
    /* Medium desktop: 4 tiles */
    .box {
-      width: 25%;
-      padding-bottom: 25%;
+      width: 33,333%;
+      padding-bottom: 19%;
    }
 }
 
