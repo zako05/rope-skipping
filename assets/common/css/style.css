@@ -46,12 +46,6 @@ p > strong > a:hover {
 	color: #ee69a0;
 }
 
-span {
-	font-size: 25px;
-	font-weight: normal;
-	color: #666666;
-}
-
 nav li,
 .soc_site li,
 .lang li {	
@@ -435,11 +429,6 @@ h2 {
 .sponsor-all {
 	margin-top: 14px;
 }
-.large-icon-teacher > img,
-.large-icon-teacher > div > img {
-	box-shadow: 1px 1px 1px;
-	border-radius: 8px;
-}
 .large-icon > img,
 .large-icon > div > img {
 	box-shadow: 1px 1px 1px;
@@ -454,7 +443,7 @@ h2 {
 	padding-left: 75px;
 }
 .small-icon-align-middle > h3 {
-	padding-top: 5px;
+	padding-top: 15px;
 }
 
 @media screen and ( max-width: 1024px ) {
