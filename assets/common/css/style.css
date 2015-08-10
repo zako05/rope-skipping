@@ -446,6 +446,9 @@ h2 {
 .small-icon-align-middle > h3 {
 	padding-top: 15px;
 }
+.small-icon-percentage {
+	padding-top: 5px;
+}
 
 @media screen and ( max-width: 1024px ) {
 	.small-icon > img {
@@ -460,7 +463,11 @@ h2 {
 	.small-icon > p {
 		padding-top: 0px !important;
 	}
-	.small-icon-align-middle > .percentage-positioning {
+	.small-icon-percentage > .percentage-positioning {
+		position: relative;
+		top: -35px;
+	}
+	.small-icon-percentage > p {
 		position: relative;
 		top: -35px;
 	}
