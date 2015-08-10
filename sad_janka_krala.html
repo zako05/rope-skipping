@@ -1,31 +1,41 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<!--Mobile browsers to not scale the page by default-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!------------>
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/lib/slippry/css/slippry.css">
 	<link rel="stylesheet" href="assets/common/css/style.css">
-	<link rel="shortcut icon" type="image/png" href="assets/common/img/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="assets/common/icon/favicon.png"/>
 	<title>Crazy Jump</title>
-	<script type="text/javascript" src="assets/lib/jquery/js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="assets/lib/jquery/js/jssor.slider.mini.js"></script>
-	<script type="text/javascript" src="assets/common/js/banner.js"></script>
-	<!--FancyBox-->
 	<!-- Add jQuery library -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="assets/lib/slippry/js/slippry.js"></script>
+	<script type="text/javascript" src="assets/common/js/slippry_banner.js"></script>
+	<script type="text/javascript" src="assets/common/js/banner.js"></script>
+	<!--FancyBox-->
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="assets/lib/fancybox/jquery.fancybox.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/lib/fancybox/jquery.fancybox.css" media="screen" />
-	<link rel="stylesheet" href="assets/lib/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-	<script type="text/javascript" src="assets/lib/fancybox/jquery.fancybox-thumbs.js"></script>
+	<!-- Enable media queries for old IE -->
+	<!--[if lt IE 9]>
+		<script src="assets/common/js/css3-mediaqueries.js"></script>
+	<![endif]-->
 </head>
-<body class="gallery">
+<!-- = which class should be here gallery or no-touch???-->
+<body class="no-touch">
 	<div class="container">
-<!-- =header -->
+		<!-- =header -->
 		<header class="row">
-			<div class="row nav_menu">
-				<div class="col-sm-5">
+			<!-- =menu -->
+			<section class="row">
+				<!-- =logo -->
+				<div class="col-xs-2 col-sm-2 col-md-4 col-lg-6 header-logo">
 					<h1><a href="index.html">Crazy Jump</a></h1>
 				</div>
-				<div class="col-sm-7">
+				<!-- =navigation menu + languages -->
+				<div class="col-xs-10 col-sm-10 col-md-8 col-lg-6">
 					<div class="lang">
 						<ul>
 							<li><a href="index.html" class="selected">SK</a></li>
@@ -33,157 +43,276 @@
 							<li><a href="#">EN</a></li>
 						</ul>
 					</div>
-					<nav>
+					<nav id="nav" role="navigation">
+						<a href="#nav" title="Show navigation">Show navigation</a>
+						<a href="#" title="Hide navigation">Hide navigation</a>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a class="selected">Home</a></li>
 							<li><a href="about.html">O nás</a></li>
-							<li><a href="#">Galéria</a>
+							<li>
+								<a href="?gallery" aria-haspopup="true">Galéria</a>
 								<ul>
-									<li><a href="gallery.html" class="selected">Fotogaléria</a></li>
-									<li><a href="video.html">Videá</a></li>
+									<li><a href="photos.html">Fotogaléria</a></li>
+									<li><a href="videos.html">Videá</a></li>
 								</ul>
 							</li>
 							<li><a href="contact.html">Kontakt</a></li>
 							<li><a href="faq.html">Faq</a></li>
 							<li><a href="percentage_from_taxes.html">2% z dane</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="/">Blog</a></li>
 						</ul>						
 					</nav>
 				</div>
-			</div>
-	<!-- =banner -->
-			<div class="row banner">
-				<hr class="line-banner-top">
-				<div class="col-md-6">
+			</section>
+			<hr class="line-banner-top">
+			<!-- =banner -->
+			<section id="banner" class="row">			
+				<!-- =welcome -->
+				<section class="col-md-6 col-lg-6">
 					<h2>
-						<span class="vitajte">Vitajte</span>
-						<span class="na_stranke">na stránke</span>
+						<span>Vitajte</span>
+						<span class="middle-text">na stránke</span>
 						<span>Crazy Jump</span>
 					</h2>
-					<p class="banner_text">
+					<p class="banner-text">
 						Sme partia ľudí, ktorí cez švihadlo skáču nejaký ten rok. Chceme rozšíriť tento šport aj na Slovensko, preto vedieme kurzy pre deti, mládež i dospelých a organizujeme rôzne workshopy, prezentácie a vystúpenia po celom Slovensku.
 					</p>
-				</div>
-				<div class="col-md-6">
-					<div id="slider1_container">
-						<div u="slides" class="slider" style="cursor: move; position: absolute; overflow: hidden; left: 23px; top: 30px; width: 540px; height: 285px;">
-							<div><img u="image" src="assets/common/img/banner1_540x285px.png" /></div>
-							<div><img u="image" src="assets/common/img/banner2_540x285px.png" /></div>
-							<div><img u="image" src="assets/common/img/banner3_540x285px.png" /></div>
-							<div><img u="image" src="assets/common/img/banner4_540x285px.png" /></div>
-							<div><img u="image" src="assets/common/img/banner5_540x285px.png" /></div>
-						</div>
-						<!-- Bullet Navigator -->
-						<div u="navigator" class="jssorb12" style="position: absolute; top: 349px; right: 0px; left: 240px;">
-							<!-- bullet navigator item prototype -->
-							<div u="prototype" style="position: absolute; width: 16px; height: 16px;"></div>
-						</div>
-						<!-- Arrow Navigator -->
-						<!-- Arrow Left -->
-						<span u="arrowleft" class="jssora10l" style="width: 28px; height: 40px; top: 153px; left: 28px;"></span>
-						<!-- Arrow Right -->
-						<span u="arrowright" class="jssora10r" style="width: 28px; height: 40px; top: 153px; right: 34px"></span>
+				</section>
+				<!-- =slippry slider -->
+				<section class="col-md-6 col-lg-6">
+					<div id="slippry-slider">
+						<ul id="slippry-slider-img">
+							<li><img src="assets/common/img/banner1_540x285px.png" alt=""></li>
+							<li><img src="assets/common/img/banner2_540x285px.png" alt=""></li>
+							<li><img src="assets/common/img/banner3_540x285px.png" alt=""></li>
+							<li><img src="assets/common/img/banner4_540x285px.png" alt=""></li>
+							<li><img src="assets/common/img/banner5_540x285px.png" alt=""></li>
+						</ul>
 					</div>
-				</div>
-			</div>	
-		</header>	
-		<hr class="line-bottom">	
-<!-- =main -->		
-		<div class="row main">
+				</section>
+			</section>	
+		</header>
+		<hr class="line-banner-bottom">
+		<hr class="line-main-top">
+		<!-- =main -->		
+		<main id="main">
 			<div class="row section">
-				<hr class="line-content-top">
 				<div class="col-sm-12 content_1">
-					<img src="assets/common/img/fotogaleria.png" alt="Fotogaléria">
-					<h3>Sad Janka Kráľa</h3>
+					<a href="photos.html"><img src="assets/common/img/fotogaleria.png" alt="Fotogaléria"></a>
+					<span><a href="photos.html">Fotogaléria</a></span>
+					<span>| Sad Janka Kráľa</span>
 				</div>
 			</div>
-			<!-- prvy riadok galerie -->	
-			<div class="row">
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/89520.jpg" class="thumbs" title="Sad Janka Kráľa - 1">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/89520.jpg" />
+			<!-- prvy riadok galerie -->
+			<div class="wrap">
+			<!-- Definicia jednotlivych dlazdic: -->
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010276.jpg" class="fancybox" title="Sad Janka Kráľa - 1">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010276.jpg" />
 					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 1</h3>
+					<div class="titleBox">Sad Janka Kráľa 1</div>
 				</div>
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/907.jpg" class="thumbs" title="Sad Janka Kráľa - 2">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/907.jpg" />
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010277.jpg" class="fancybox" title="Sad Janka Kráľa - 2">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010277.jpg" />
 					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 2</h3>
+					<div class="titleBox">Sad Janka Kráľa 2</div>
 				</div>
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/9432.jpg" class="thumbs" title="Sad Janka Kráľa - 3">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/9432.jpg" />
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010280.jpg" class="fancybox" title="Sad Janka Kráľa - 3">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010280.jpg" />
 					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 3</h3>
+				  <div class="titleBox">Sad Janka Kráľa 3</div>
 				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010281.jpg" class="fancybox" title="Sad Janka Kráľa - 4">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010281.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 4</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010282.jpg" class="fancybox" title="Sad Janka Kráľa - 5">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010282.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 5</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010283.jpg" class="fancybox" title="Sad Janka Kráľa - 6">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010283.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 6</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010284.jpg" class="fancybox" title="Sad Janka Kráľa - 7">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010284.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 7</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+					<a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010285.jpg" class="fancybox" title="Sad Janka Kráľa - 8">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010285.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 8</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010286.jpg" class="fancybox" title="Sad Janka Kráľa - 9">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010286.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 9</div>
+				</div>
+			  </div>	
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010287.jpg" class="fancybox" title="Sad Janka Kráľa - 10">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010287.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 10</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010288.jpg" class="fancybox" title="Sad Janka Kráľa - 11">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010288.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 11</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010289.jpg" class="fancybox" title="Sad Janka Kráľa - 12">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010289.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 12</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010290.jpg" class="fancybox" title="Sad Janka Kráľa - 13">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010290.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 13</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010291.jpg" class="fancybox" title="Sad Janka Kráľa - 14">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010291.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 14</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010293.jpg" class="fancybox" title="Sad Janka Kráľa - 15">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010293.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 15</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010294.jpg" class="fancybox" title="Sad Janka Kráľa - 16">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010294.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 16</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010296.jpg" class="fancybox" title="Sad Janka Kráľa - 17">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010296.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 17</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010297.jpg" class="fancybox" title="Sad Janka Kráľa - 18">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010297.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 18</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010298.jpg" class="fancybox" title="Sad Janka Kráľa - 19">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010298.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 19</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010299.jpg" class="fancybox" title="Sad Janka Kráľa - 20">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010299.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 20</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010300.jpg" class="fancybox" title="Sad Janka Kráľa - 21">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010300.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 21</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010309.jpg" class="fancybox" title="Sad Janka Kráľa - 22">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010309.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 22</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010310.jpg" class="fancybox" title="Sad Janka Kráľa - 23">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010310.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 23</div>
+				</div>
+			  </div>
+			  <div class="box">
+				<div class="boxInner">
+				  <a rel="album10" href="assets/common/img/10_sad_janka_krala/P1010311.jpg" class="fancybox" title="Sad Janka Kráľa - 24">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010311.jpg" />
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa 24</div>
+				</div>
+			  </div>		
 			</div>
-			<!-- druhy riadok galerie -->	
-			<div class="row">
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/9810.jpg" class="thumbs" title="Sad Janka Kráľa - 4">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/9810.jpg" />
-					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 4</h3>
-				</div>
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/99496.jpg" class="thumbs" title="Sad Janka Kráľa - 5">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/99496.jpg" />
-					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 5</h3>
-				</div>
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/BFM.jpg" class="thumbs" title="Sad Janka Kráľa - 6">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/BFM.jpg" />
-					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 6</h3>
-				</div>
-			</div>
-			<!-- treti riadok galerie -->	
-			<div class="row">
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/SpisCastle.jpg" class="thumbs" title="Sad Janka Kráľa - 7">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/SpisCastle.jpg" />
-					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 7</h3>
-				</div>
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/21066.jpg" class="thumbs" title="Sad Janka Kráľa - 8">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/21066.jpg" />
-					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 8</h3>
-				</div>
-				<div class="col-sm-4">
-					<a rel="thumbs" href="assets/common/img/sad_janka_krala/31811.jpg" class="thumbs" title="Sad Janka Kráľa - 9">
-						<img src="assets/common/img/sad_janka_krala/thumbnails/31811.jpg" />
-					</a>
-					<hr class="section_line">
-					<h3>Sad Janka Kráľa - 9</h3>
-				</div>
-			</div>
-			<hr class="line-content-bottom">
-		</div>
-			<hr class="line-content-bottom">
-		</div>
-<!-- =footer -->
+		</main>
+		<hr class="line-main-bottom">
+		<!-- =footer -->
 		<footer class="row">
-			<div class="col-md-8">
-				<nav>
+			<div class="col-sm-12 col-md-12 col-lg-7">
+				<nav id="nav" role="navigation">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a class="selected">Home</a></li>
 						<li><a href="about.html">O nás</a></li>
-						<li><a href="#">Galéria</a>
-							<ul>
-								<li><a href="gallery.html" class="selected">Fotogaléria</a></li>
-								<li><a href="video.html">Videá</a></li>
+						<li>
+							<a href="?gallery" aria-haspopup="true">Galéria</a>
+							<ul>								
+								<li><a href="videos.html">Videá</a></li>
+								<li><a href="photos.html">Fotogaléria</a></li>
 							</ul>
 						</li>
 						<li><a href="contact.html">Kontakt</a></li>
@@ -193,31 +322,26 @@
 					</ul>				
 				</nav>
 			</div>
-			<div class="col-md-4">
-				<ul class="soc_site">
-						<li class="facebook">
-							<a href="#">
-								<img src="assets/common/img/facebook_small.png" alt="facbook">
+			<div class="col-xs-12 col-sm-12 col-lg-5">
+				<ul class="social-sites">
+						<li>
+							<a href="https://www.facebook.com/crazyjump.sk">
+								<img src="assets/common/icon/facebook_icon.png" alt="facbook">
 							</a>
 						</li>
-						<li class="youtube">
-							<a href="#">
-								<img src="assets/common/img/youtube_small.png" alt="youtube">
+						<li>
+							<a href="https://www.youtube.com/channel/UCu52amcDDMpvRzAod204R7A">
+								<img src="assets/common/icon/youtube_icon.png" alt="youtube">
 							</a>
 						</li>
-						<li class="gplus">
-							<a href="#">
-								<img src="assets/common/img/gplus_small.png" alt="gplus">
+						<li>
+							<a href="https://plus.google.com/111200369055594174387/about">
+								<img src="assets/common/icon/gplus_icon.png" alt="gplus">
 							</a>
 						</li>
-						<li class="vimeo">
-							<a href="#">
-								<img src="assets/common/img/vimeo_small.png" alt="vimeo">		
-							</a>
-						</li>
-						<li class="instagram">
-							<a href="#">
-								<img src="assets/common/img/instagram_small.png" alt="instagram">
+						<li>
+							<a href="https://twitter.com/CRAZYJUMP_SK">
+								<img src="assets/common/icon/twitter_icon.png" alt="twitter">		
 							</a>
 						</li>
 				</ul>
@@ -225,24 +349,7 @@
 			</div>
 		</footer>
 	</div>
-	<!-- Volanie javascriptu fancyboxu po nacitani stranky - Fotky ako Album s thumbnailsmi na spodu -->
-	<!-- Thumbnails 300x188px -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".thumbs").fancybox({
-				prevEffect	: 'none',
-				nextEffect	: 'none',
-				helpers	: {
-					title	: {
-						type: 'outside'
-					},
-					thumbs	: {
-						width	: 50,
-						height	: 50
-					}
-				}
-			});
-		});
-	</script>
+	<!-- Volanie javascriptu fancyboxu po nacitani stranky - Fotky ako Album s bielym okrajom -->
+	<script type="text/javascript" src="assets/common/js/gallery_settings.js"></script>
 </body>
 </html>

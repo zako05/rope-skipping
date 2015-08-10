@@ -1,27 +1,33 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/lib/slippry/css/slippry.css">
 	<link rel="stylesheet" href="assets/common/css/style.css">
-	<link rel="shortcut icon" type="image/png" href="assets/common/img/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="assets/common/icon/favicon.png"/>
 	<title>Crazy Jump</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="assets/lib/slippry/js/slippry.js"></script>
 	<script type="text/javascript" src="assets/common/js/slippry_banner.js"></script>
+	<!-- Enable media queries for old IE -->
+	<!--[if lt IE 9]>
+	<script src="assets/common/js/css3-mediaqueries.js"></script>
+	<![endif]-->
 </head>
-<body class="gallery">
+<body class="no-touch">
 	<div class="container">
 		<!-- =header -->
 		<header class="row">
 			<!-- =menu -->
 			<section class="row">
 				<!-- =logo -->
-				<div class="col-sm-2 col-md-4 col-lg-6">
+				<div class="col-xs-2 col-sm-2 col-md-4 col-lg-6 header-logo">
 					<h1><a href="index.html">Crazy Jump</a></h1>
 				</div>
 				<!-- =navigation menu + languages -->
-				<div class="col-sm-10 col-md-8 col-lg-6">
+				<div class="col-xs-10 col-sm-10 col-md-8 col-lg-6">
 					<div class="lang">
 						<ul>
 							<li><a href="index.html" class="selected">SK</a></li>
@@ -31,7 +37,7 @@
 					</div>
 					<nav id="nav" role="navigation">
 						<a href="#nav" title="Show navigation">Show navigation</a>
-						<a href="#" title-"Hide navigation">Hide navigation</a>
+						<a href="#" title="Hide navigation">Hide navigation</a>
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">O nás</a></li>
@@ -54,7 +60,7 @@
 			<!-- =banner -->
 			<section id="banner" class="row">			
 				<!-- =welcome -->
-				<section class="col-lg-6">
+				<section class="col-md-6 col-lg-6">
 					<h2>
 						<span>Vitajte</span>
 						<span class="middle-text">na stránke</span>
@@ -65,7 +71,7 @@
 					</p>
 				</section>
 				<!-- =slippry slider -->
-				<section class="col-lg-6">
+				<section class="col-md-6 col-lg-6">
 					<div id="slippry-slider">
 						<ul id="slippry-slider-img">
 							<li><img src="assets/common/img/banner1_540x285px.png" alt=""></li>
@@ -77,75 +83,111 @@
 					</div>
 				</section>
 			</section>	
-		</header>		
-		<hr class="line-banner-bottom">	
+		</header>
+		<hr class="line-banner-bottom">
+		<hr class="line-main-top">
 		<!-- =main -->		
-		<div class="row main">
-			<div class="row section">
-				<hr class="line-content-top">
-				<div class="col-sm-12 content_1">
+		<main id="main">
+			<section class="row">
+				<section class="col-sm-12 col-md-12 col-lg-12 small-icon small-icon-align-middle">
 					<img src="assets/common/img/fotogaleria.png" alt="Fotogaléria">
 					<h3>Fotogaléria</h3>
+				</section>
+			</section>
+			<!-- prvy riadok galerie -->
+			<div class="wrap">
+			<!-- Definicia jednotlivych dlazdic: -->
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="strkovecke_jazero.html">
+						<img src="assets/common/img/1_strkovecke_jazero/thumbnails/we are the best.jpg" alt="Štrkovecké jazero">
+					</a>
+					<div class="titleBox">Štrkovecké jazero</div>
 				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="rope_skipping_camp_2013.html">
+						<img src="assets/common/img/2_rope_skipping_camp_2013/thumbnails/rope camp_spolocna.jpg" alt="Rope skipping camp 2013">
+					</a>
+					<div class="titleBox">Rope skipping camp 2013</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="rope_skipping_camp_2014.html">
+						<img src="assets/common/img/3_rope_skipping_camp_2014/thumbnails/P1060356.jpg" alt="Rope skipping camp 2014">
+					</a>
+				  <div class="titleBox">Rope skipping camp 2014</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="fotky_z_treningov.html">
+						<img src="assets/common/img/4_fotky_z_treningov/thumbnails/Crazy Jump_ramikova.jpg" alt="Fotky z tréningov">
+					</a>
+				  <div class="titleBox">Fotky z tréningov</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="fotky_z_vystupeni.html">
+						<img src="assets/common/img/5_fotky_z_vystupeni/1_racianske_hody_2014/thumbnails/Crazy Jump s Vienkom.jpg" alt="Fotky z vystúpení">
+					</a>
+				  <div class="titleBox">Fotky z vystúpení</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="sutaz_a_workshop_szombathely.html">
+						<img src="assets/common/img/6_sutaz_a_workshop_szombathely/thumbnails/hop.jpg" alt="Súťaž a worksop v Szombathely">
+					</a>
+				  <div class="titleBox">Súťaž a workshop v Szombathely</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="Rope skipping christmas challenge.html">
+						<img src="assets/common/img/7_sutaz_rope_skipping_christmas_challenge/thumbnails/Spoločná.jpg" alt="Rope skipping christmas challenge">
+					</a>
+				  <div class="titleBox">Rope skipping christmas challenge</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="1_czech_workshop_15.html">
+						<img src="assets/common/img/8_1_czech_workshop_15/thumbnails/spolocna.jpg" alt="1 Czech Workshop 2015">
+					</a>
+				  <div class="titleBox">1 Czech Workshop 2015</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="2_czech_workshop_15.html">
+						<img src="assets/common/img/9_2_czech_workshop_15/thumbnails/1..jpg" alt="2 Czech Workshop 2015">
+					</a>
+				  <div class="titleBox">2 Czech Workshop 2015</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="sad_janka_krala.html">
+						<img src="assets/common/img/10_sad_janka_krala/thumbnails/P1010276.JPG" alt="Sad Janka Kráľa">
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="zs_sokolikova.html">
+						<img src="assets/common/img/11_zs_sokolikova/thumbnails/IMG_20150116_102019.jpg" alt="ZŠ Sokolíkova">
+					</a>
+				  <div class="titleBox">ZŠ Sokolíkova</div>
+				</div>
+			  </div>			
 			</div>
-			<!-- prvy riadok galerie -->	
-			<div class="row">
-				<div class="col-sm-4">
-					<a href="strkovecke_jazero.html"><img src="assets/common/img/strkovecke_jazero.png" alt="Štrkovecké jazero"></a>
-					<hr class="section_line">
-					<a href="strkovecke_jazero.html"><h3>Štrkovecké jazero</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="rope_skipping_camp_2013.html"><img src="assets/common/img/rope_skipping_camp_2013.png" alt="Rope skipping camp 2013"></a>
-					<hr class="section_line">
-					<a href="rope_skipping_camp_2013.html"><h3>Rope skipping camp 2013</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="sad_janka_krala.html"><img src="assets/common/img/sad_janka_krala.png" alt="Sad Janka Kráľa"></a>
-					<hr class="section_line">
-					<a href="sad_janka_krala.html"><h3>Sad Janka Kráľa</h3></a>
-				</div>
-			</div>
-			<!-- druhy riadok galerie -->	
-			<div class="row">
-				<div class="col-sm-4">
-					<a href="fotky_z_treningov.html"><img src="assets/common/img/fotky_z_treningov.png" alt="Fotky z tréningov"></a>
-					<hr class="section_line">
-					<a href="fotky_z_treningov.html"><h3>Fotky z tréningov</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="sutaz_a_workshop_szombathely.html"><img src="assets/common/img/sutaz_a_workshop_v_szombathely.png" alt="Súťaž a worksop v Szombathely"></a>
-					<hr class="section_line">
-					<a href="sutaz_a_workshop_szombathely.html"><h3>Súťaž a workshop v Szombathely</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="rope_skipping_camp_2014.html"><img src="assets/common/img/rope_skipping_camp_2014.png" alt="Rope skipping camp 2013"></a>
-					<hr class="section_line">
-					<a href="rope_skipping_camp_2014.html"><h3>Rope skipping camp 2014</h3></a>
-				</div>
-			</div>
-			<!-- treti riadok galerie -->	
-			<div class="row">
-				<div class="col-sm-4">
-					<a href="fotky_z_vystupeni.html"><img src="assets/common/img/fotky_z_vystupeni.png" alt="Fotky z vystúpení"></a>
-					<hr class="section_line">
-					<a href="fotky_z_vystupeni.html"><h3>Fotky z vystúpení</h3></a>
-				</div>
-				<div class="col-sm-4">
-					<a href="fotky_zo_sutazi.html"><img src="assets/common/img/fotky_zo_sutazi.png" alt="Fotky zo súťaží"></a>
-					<hr class="section_line">
-					<a href="fotky_zo_sutazi.html"><h3>Fotky zo súťaží</h3></a>
-				</div>
-				<!--<div class="col-sm-4">
-					<a href="#"><img src="assets/common/img/....png" alt="..."></a>
-					<hr class="section_line">
-					<a href="#"><h3>...</h3></a>
-				</div>-->
-			</div>
-			<hr class="line-content-bottom">
-		</div>
-			<hr class="line-content-bottom">
-		</div>
+		</main>
+		<hr class="line-main-bottom">
 		<!-- =footer -->
 		<footer class="row">
 			<div class="col-sm-12 col-md-12 col-lg-7">
