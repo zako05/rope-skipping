@@ -166,7 +166,7 @@ nav a {
 		display: none;
 	}
 	#nav ul li {
-		margin-right: 1px; /* this 1px missing on normal screen size, but now missing on smaller screen size - awful fix */
+		//margin-right: 1px; /* this 1px missing on normal screen size, but now missing on smaller screen size - awful fix */
 	}
 	#nav li {
 		position: relative;
