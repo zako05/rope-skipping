@@ -438,27 +438,34 @@ h2 {
 .small-icon > img {
 	float: left;
 }
-.small-icon > h3 {
+.small-icon > h3,
+.small-icon > div {
 	height: 45px;
 	padding-top: 5px;
 	padding-left: 75px;
 }
-.small-icon-align-middle > h3 {
+.small-icon-align-middle > h3,
+.small-icon-align-middle > div {
 	padding-top: 15px;
 }
+	div > h3 { 
+		float: left;
+	}
 .small-icon-percentage {
 	padding-top: 5px;
 }
 
+
 @media screen and ( max-width: 1024px ) {
 	.small-icon > img {
-	float: none;
+		float: none;
 	}
-	.small-icon > h3 {
+	.small-icon > h3,
+	.small-icon > div {
 		padding-left: 0px;
-		position: relative;
-		top: -15%;
-		transform: translateY(15%)
+		//position: relative;
+		//top: -15%;
+		//transform: translateY(15%)
 	}
 	.small-icon > p {
 		padding-top: 0px !important;
