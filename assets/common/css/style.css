@@ -856,7 +856,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     	width: 20%;
     	height: 10%;
 	}
-.training-experience-list > ul > li {
+.training-experience-list > li {
 	position: relative;
 	left: 37%;
 }
@@ -867,13 +867,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	}
 }
 @media screen and ( max-width: 1199px) {
-	.training-experience-list > ul > li {
+	.training-experience-list > li {
 	position: relative;
 	left: 45%;
 	}
 }
 @media screen and ( max-width: 768px) {
-	.training-experience-list > ul > li {
+	.training-experience-list > li {
 	position: relative;
 	left: 15%;
 	}
