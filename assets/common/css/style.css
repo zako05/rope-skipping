@@ -455,8 +455,10 @@ h2 {
 	padding-top: 5px;
 }
 
-
 @media screen and ( max-width: 1024px ) {
+	div > h3 {
+		font-size: 13px;
+	}
 	.small-icon > img {
 		float: none;
 	}
