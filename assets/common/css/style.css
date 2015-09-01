@@ -85,6 +85,9 @@ nav li,
 .highlight_pink {
 	color: #ee69a0;
 }
+.highlight_crazy_green {
+	color: #1eafb5;
+}
 
 /*
 *******************
@@ -748,6 +751,18 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 /*
 *******************
+* =videos
+*******************
+*/
+.videos p a {
+	text-decoration: underline; 
+}
+.videos p a:hover {
+	text-decoration: none;
+	color: #1eafb5;
+}
+/*
+*******************
 * =contact
 *******************
 */
@@ -780,9 +795,15 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .contact textarea {
 	margin-left: 48px;
 }
-
 .contact button {
 	margin-left: 298px;	
+}
+.contact p a {
+	text-decoration: underline;
+}
+.contact p a:hover {
+	text-decoration: none;
+	color: #66d0de;
 }
 
 /*
@@ -794,7 +815,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .faq p a {
 	text-decoration: underline;
 }
-
 .faq p a:hover {
 	text-decoration: none;
 	color: #a15252;
@@ -859,6 +879,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	position: relative;
 	left: 37%;
 }
+.training p a {
+	text-decoration: underline;
+}
+.training p a:hover {
+	text-decoration: none;
+	color: #66d0de;
+}
 
 @media screen and ( max-width: 1024px) {
 	.training > .container > #main > section > section > table {
@@ -883,7 +910,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 * =notice
 *******************
 */
-
+.notice p a {
+	text-decoration: underline;
+}
+.notice p a:hover {
+	text-decoration: none;
+	color: #8dc570;
+}
 /*
 *******************
 * =rope_skipping
@@ -894,13 +927,26 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .rope_skipping > .container > #main > section > section > div > p {
 	text-align: center;
 }
+.rope_skipping p a {
+	text-decoration: underline;
+}
+.rope_skipping p a:hover {
+	text-decoration: none;
+	color: #e9a06d;
+}
 
 /*
 *******************
 * =events
 *******************
 */
-
+.events p a {
+	text-decoration: underline;
+}
+.events p a:hover {
+	text-decoration: none;
+	color: #572b01;
+}
 /*
 *******************
 * =competitions
@@ -946,4 +992,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+}
+.camp p a {
+	text-decoration: underline;
+}
+.camp p a:hover {
+	text-decoration: none;
+	color: #ee69a0;
 }
