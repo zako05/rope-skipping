@@ -781,14 +781,21 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		display: none;
 	}
 	.gmap-static-image {
-		background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Račianska+190,+831+06+Bratislava&zoom=16&scale=false&size=600x400&maptype=roadmap&format=png&visual_refresh=true&markers=icon:Crazy Jump%7Cshadow:false%7CRačianska+190,+,+83106+Bratislava");
-		width: 100%;
+		//background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Račianska+190,+831+06+Bratislava&zoom=16&scale=false&size=600x400&maptype=roadmap&format=png&visual_refresh=true&markers=icon:Crazy Jump%7Cshadow:false%7CRačianska+190,+,+83106+Bratislava");
+		background-image: url("http://maps.googleapis.com/maps/api/staticmap?center=Bratislava,+SK&zoom=11&scale=false&size=800x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CRacianska+190,+831+06+Bratislava&markers=size:mid%7Ccolor:0xff0000%7Clabel:2%7CBorinska+8,+841+03+Bratislava");
+		background-repeat: no-repeat;
+		width: 88.5%;
 		height: 400px;
 		border-radius: 10px;
-		box-shadow: 1px 1px 1px;
+		box-shadow: 1px 1px 1px black;
 	}
 	#main > section > section > a:link {
 		color: inherit;
+	}
+}
+@media screen and ( max-width: 685px) {
+	.gmap-static-image {
+		width: 100%;
 	}
 }
 
