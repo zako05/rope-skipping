@@ -564,6 +564,7 @@ footer {
 	
 	footer #nav > ul {
 		padding: 0px;
+		float: none;
 	}
 		footer #nav > ul > li {
 			display: inline-block;

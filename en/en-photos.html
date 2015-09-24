@@ -1,19 +1,24 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="../assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="../assets/lib/slippry/css/slippry.css">
 	<link rel="stylesheet" href="../assets/common/css/style.css">
 	<link rel="shortcut icon" type="image/png" href="../assets/common/icon/favicon.png"/>
 	<title>Crazy Jump</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="../assets/lib/slippry/js/slippry.js"></script>
 	<script type="text/javascript" src="../assets/common/js/slippry_banner.js"></script>
+	<!-- Enable media queries for old IE -->
+	<!--[if lt IE 9]>
+	<script src="../assets/common/js/css3-mediaqueries.js"></script>
+	<![endif]-->
 	<script type="text/javascript" src="../assets/lib/jquery/js/DoubleTapToGo.js"></script>
 	<script type="text/javascript" src="../assets/common/js/taptogo.js"></script>
 </head>
-<body class="about">
+<body class="no-touch">
 	<div class="container">
 		<!-- =header -->
 		<header class="row">
@@ -27,7 +32,7 @@
 				<div class="col-xs-10 col-sm-10 col-md-8 col-lg-6">
 					<div class="lang">
 						<ul>
-							<li><a href="../about.html">SK</a></li>
+							<li><a href="../photos.html">SK</a></li>
 							<li class="slash">/</li>
 							<li><a class="selected">EN</a></li>
 						</ul>
@@ -37,11 +42,11 @@
 						<a href="#" title="Hide navigation">Hide navigation</a>
 						<ul>
 							<li><a href="en-index.html">Home</a></li>
-							<li><a class="selected">About Us</a></li>
+							<li><a href="en-about.html">About Us</a></li>
 							<li>
-								<a href="?gallery" aria-haspopup="true">Gallery</a>
+								<a href="?gallery" class="selected" aria-haspopup="true">Gallery</a>
 								<ul>
-									<li><a href="en-photos.html">Photos</a></li>
+									<li><a class="selected">Photos</a></li>
 									<li><a href="en-videos.html">Videos</a></li>
 								</ul>
 							</li>
@@ -61,7 +66,7 @@
 				<!-- =welcome -->
 				<section class="col-md-6 col-lg-6">
 					<h2>
-						<span>Welcome</span>
+						<span>Welcom</span>
 						<span class="middle-text">to the website</span>
 						<span>Crazy Jump</span>
 					</h2>
@@ -81,51 +86,110 @@
 						</ul>
 					</div>
 				</section>
-			</section>
+			</section>	
 		</header>
 		<hr class="line-banner-bottom">
-		<hr class="line-main-top">	
+		<hr class="line-main-top">
 		<!-- =main -->		
 		<main id="main">
 			<section class="row">
 				<section class="col-sm-12 col-md-12 col-lg-12 small-icon small-icon-align-middle">
-					<img src="../assets/common/img/about.png" alt="about">
-					<h3>About us</h3>
-					<p>
-						Janka, Misko a Siska - they are founders of the sport club Crazy Jump. They do rope skipping over three years. They were on rope skipping camps in Frantiskovy Lazne in the Czech Republic where they were trained by the world leaders of rope skipping such as Jonathan Mahoto (FR), Judit Kovacs (HU), Rachael Dale (UK), Sebastian Deeg (DE), Willem Tack (BE) a Adrienn Banhegyi (HU) by led Jany Černej - Beránkovej. The aim of Crazy Jump is to bring rope skipping to SLovakia, show people that there is funny way of jumping rope and motivate them to move. The dream of Crazy Jump is to create rope skipping teams, participate with them in local and foreing competitions as well and represent Slovakia in this sport abroad. Therefore we organize courses and training for children, youths and adults, various performances and workshops across the country. On our trainings you will learn how to work with rope, basic and difficult tricks, how to jump in double dutch, in chinese wheels and much more. We guarentee  that not just you will have fun but also you will sweat and leave from training with smile.
-					</p>
+					<img src="../assets/common/img/fotogaleria.png" alt="Photos">
+					<h3>Photos</h3>
 				</section>
 			</section>
-			<hr class="line-main-middle">
-			<section class="row">
-				<section class="col-sm-4 col-md-4 col-lg-4 large-icon">
-					<img class="about-teacher-image" src="../assets/common/img/janka_120x120.png" alt="janka">
-					<h3>Janka Puhová</h3>
-					<p>
-						Coach and jumper in Crazy Jump, who has ingenious memory for steps and variations and can combine uncombinable. :) Where she is there is quaranteed a good mood and atmosphere. She is in charge of organizational affairs, communications and creating choreographies.
-						<p><span class="highlight_blue">Hobbies:</span> double dutch, speedsteps, tanec, wheels</p>
-						<p><span class="highlight_blue">Incentive character:</span> sunglasses and smile</p>
-					</p>
-				</section>
-				<section class="col-sm-4 col-md-4 col-lg-4 large-icon">
-					<img class="about-teacher-image" src="../assets/common/img/misko_120x120.png" alt="misko">
-					<h3>Misko Nasticky</h3>
-					<p>
-						 Coach and one of the most talented jumper in our team. He jumps everywhere where it is possible (on the trainings, at home, out, in school, just everywhere). He is responsible and nobody can better explain tricks than he. 
-						 <p><span class="highlight_green">Hobbies:</span> learning new tricks, double dutch, various kindes of sports, designing buildings.</p>
-						 <p><span class="highlight_green">Incentive character:</span> always in good mood and height - higher are just basketball players :)</p>
-					</p>
-				</section>
-				<section class="col-sm-4 col-md-4 col-lg-4 large-icon">
-					<img class="about-teacher-image" src="../assets/common/img/siska_120x120.png" alt="siska">
-					<h3>Siska Žáková</h3>
-					<p>
-						Jumper and coach who is in charge of web page, promotion and communication.
-						<p><span class="highlight_orange">Hobbies:</span> learning new tricks, double dutch, skiing, roller skating and Photoshop</p>
-						<p><span class="highlight_orange">Incentive character:</span> 3/4 sweatpants and mop</p>
-					</p>
-				</section>
-			</section>
+			<!-- prvy riadok galerie -->
+			<div class="wrap">
+			<!-- Definicia jednotlivych dlazdic: -->
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="strkovecke_jazero.html">
+						<img src="../assets/common/img/1_strkovecke_jazero/thumbnails/1_strkovecke_jazero_thumbnails_2.jpg" alt="Štrkovecké jazero">
+					</a>
+					<div class="titleBox">Štrkovecké jazero</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="rope_skipping_camp_2013.html">
+						<img src="../assets/common/img/2_rope_skipping_camp_2013/thumbnails/2_rope_skipping_camp_2013_thumbnails_5.jpg" alt="Rope skipping camp 2013">
+					</a>
+					<div class="titleBox">Rope skipping camp 2013</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="rope_skipping_camp_2014.html">
+						<img src="../assets/common/img/3_rope_skipping_camp_2014/thumbnails/3_rope_skipping_camp_2014_thumbnails_14.jpg" alt="Rope skipping camp 2014">
+					</a>
+				  <div class="titleBox">Rope skipping camp 2014</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="fotky_z_treningov.html">
+						<img src="../assets/common/img/4_fotky_z_treningov/thumbnails/4_fotky_z_treningov_thumbnails_20.jpg" alt="Fotky z tréningov">
+					</a>
+				  <div class="titleBox">Fotky z tréningov</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="fotky_z_vystupeni.html">
+						<img src="../assets/common/img/5_fotky_z_vystupeni/1_racianske_hody_2014/thumbnails/1_racianske_hody_2014_thumbnails_3.jpg" alt="Fotky z vystúpení">
+					</a>
+				  <div class="titleBox">Fotky z vystúpení</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="sutaz_a_workshop_szombathely.html">
+						<img src="../assets/common/img/6_sutaz_a_workshop_szombathely/thumbnails/6_sutaz_a_workshop_szombathely_thumbnails_9.jpg" alt="Súťaž a worksop v Szombathely">
+					</a>
+				  <div class="titleBox">Súťaž a workshop v Szombathely</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="Rope skipping christmas challenge.html">
+						<img src="../assets/common/img/7_sutaz_rope_skipping_christmas_challenge/thumbnails/7_sutaz_rope_skipping_christmas_challenge_thumbnails_6.jpg" alt="Rope skipping christmas challenge">
+					</a>
+				  <div class="titleBox">Rope skipping christmas challenge</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="1_czech_workshop_15.html">
+						<img src="../assets/common/img/8_1_czech_workshop_15/thumbnails/8_1_czech_workshop_15_thumbnails_2.jpg" alt="1 Czech Workshop 2015">
+					</a>
+				  <div class="titleBox">1 Czech Workshop 2015</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="2_czech_workshop_15.html">
+						<img src="../assets/common/img/9_2_czech_workshop_15/thumbnails/9_2_czech_workshop_15_thumbnails_12.jpg" alt="2 Czech Workshop 2015">
+					</a>
+				  <div class="titleBox">2 Czech Workshop 2015</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="sad_janka_krala.html">
+						<img src="../assets/common/img/10_sad_janka_krala/thumbnails/10_sad_janka_krala_thumbnails_1.jpg" alt="Sad Janka Kráľa">
+					</a>
+				  <div class="titleBox">Sad Janka Kráľa</div>
+				</div>
+			  </div>
+			  <div class="box large-icon">
+				<div class="boxInner">
+					<a href="zs_sokolikova.html">
+						<img src="../assets/common/img/11_zs_sokolikova/thumbnails/11_zs_sokolikova_thumbnails_3.jpg" alt="ZŠ Sokolíkova">
+					</a>
+				  <div class="titleBox">ZŠ Sokolíkova</div>
+				</div>
+			  </div>			
+			</div>
 		</main>
 		<hr class="line-main-bottom">
 		<!-- =footer -->
@@ -134,12 +198,12 @@
 				<nav id="nav" role="navigation">
 					<ul>
 						<li><a href="en-index.html">Home</a></li>
-						<li><a class="selected">About Us</a></li>
+						<li><a href="en-about.html">About Us</a></li>
 						<li>
-							<a href="?gallery" aria-haspopup="true">Gallery</a>
+							<a href="?gallery" class="selected" aria-haspopup="true">Gallery</a>
 							<ul>								
 								<li><a href="en-videos.html">Videos</a></li>
-								<li><a href="en-photos.html">Photos</a></li>
+								<li><a class="selected">Photos</a></li>
 							</ul>
 						</li>
 						<li><a href="en-contact.html">Contact</a></li>
