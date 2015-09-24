@@ -150,6 +150,7 @@ nav a {
 }
 
 #nav {
+	width: 550px; /* english nav menu is shorter, so needs the fixed widht 550px  */
 	float: right;
 	margin-bottom: 20px;
 	margin-right: 10px;
@@ -168,9 +169,12 @@ nav a {
 	#nav > a {
 		display: none;
 	}
-	#nav ul li {
-		//margin-right: 1px; /* this 1px missing on normal screen size, but now missing on smaller screen size - awful fix */
+	#nav > ul {
+		float: right; /* move to the right side because of the fixed widht */
 	}
+		#nav ul li {
+			//margin-right: 1px; /* this 1px missing on normal screen size, but now missing on smaller screen size - awful fix */
+		}
 	#nav li {
 		position: relative;
 	}
@@ -209,13 +213,14 @@ nav a {
 	}
 		#nav li:hover ul {
 			display: block;
-			z-index: 1000; /* delete this after refactor slider */
+			z-index: 1000; /* delete this after refactor left: ;ider */
 		}
 	
 @media screen and ( max-width: 991px ) {
 
 	/* nav menu */
 	#nav {
+		width: 43.750px; /* due the fixed width of english nav menu it needs smaller size of width for smaller screens */
 		margin: 10px 10px 0px 0px;
 	}	
 		#nav ul li a {
@@ -519,7 +524,7 @@ h2 {
 @media screen and ( min-width: 1200px) {
 	 .text-aligned-bottom-adge-of-image > .container > #main > section > section > h3 {
 		position: relative;
-		top: -235%;
+		//top: -235%;
 		transform: translateY(235%);
 	}
 	.text-aligned-bottom-adge-of-image > .container > #main > section > section > img {
@@ -530,7 +535,7 @@ h2 {
 @media screen and ( min-width: 992px )  and ( max-width: 1200px) {
 	.text-aligned-bottom-adge-of-image > .container > #main > section > section > h3 {
 		position: relative;
-		top: -180%;
+		//top: -180%;
 		transform: translateY(180%);
 	}
 	.text-aligned-bottom-adge-of-image > .container > #main > section > section > img {
@@ -953,6 +958,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .events p a:hover {
 	text-decoration: none;
 	color: #572b01;
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+	.events-title-too-long {
+		transform: translateY(40%) !important;	
+	}
 }
 /*
 *******************
