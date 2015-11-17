@@ -1,10 +1,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/lib/slippry/css/slippry.css">
 	<link rel="stylesheet" href="assets/common/css/style.css">
+	<!--FancyBox-->
+	<link rel="stylesheet" type="text/css" href="assets/lib/fancybox/jquery.fancybox.css" media="screen" />
+	<!--Favicon-->
 	<link rel="shortcut icon" type="image/png" href="assets/common/icon/favicon.png"/>
 	<title>Crazy Jump</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -12,6 +15,8 @@
 	<script type="text/javascript" src="assets/common/js/slippry_banner.js"></script>
 	<script type="text/javascript" src="assets/lib/jquery/js/DoubleTapToGo.js"></script>
 	<script type="text/javascript" src="assets/common/js/taptogo.js"></script>
+	<!--FancyBox-->
+	<script type="text/javascript" src="assets/lib/fancybox/jquery.fancybox.pack.js"></script>
 </head>
 <body class="notice">
 	<div class="container">
@@ -88,7 +93,13 @@
 			<section class="row">
 				<section class="col-sm-12 col-md-12 col-lg-12 small-icon">
 					<img src="assets/common/img/notepad_small.png" alt="notices">
-					<h3>Oznamy</h3>
+					<h3>Oznamy</h3>					
+					<span>
+						<p><span class="highlight_green">[17.11.2015]</span> 20.11. (PIATOK) o 18:00h. CRAZY JUMP vás pozýva na narodeninovú oslavu. Oslavujeme naše druhé narodeninky.</p>
+						<a class="fancybox large-icon" href="assets/common/img/happy_birthday_crazy_jump.png">
+							<img src="assets/common/img/happy_birthday_crazy_jump.png">
+						</a>
+					</span>
 					<p><span class="highlight_green">[1.9.2015]</span> 11.9. (PIATOK) o 18:00h. máme prvý tréning v novom školskom roku na SOŠ Polygrafickej. Príďte si k nám zaskákať a vyskúšať si to. :) <a href="https://www.youtube.com/watch?v=oZwOiio6oH8" class="highlight_green">NÁBOR</a></p>
 					<p><span class="highlight_green">[31.8.2015]</span> Poriadne vyskákaní z Oľginého sústredenia. Deti spoznali nových kamarátov, naučili sa novým trikom a zažili kopec zážitkov. Riadne sme si to užili. Fotky a videjká nájdete <a href="/" class="highlight_green">tu</a>.</p>
 					<p><span class="highlight_green">[23.8. - 29.8.2015]</span> sa koná letné sústredenie Rebels O.K. Termín sa nám už blíži a my sa už nevieme dočkať. :)</p>
@@ -183,5 +194,7 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Volanie javascriptu fancyboxu po nacitani stranky - Fotky ako Album s bielym okrajom -->
+	<script type="text/javascript" src="assets/common/js/gallery_settings.js"></script>
 </body>
 </html>

@@ -440,7 +440,7 @@ h2 {
 .large-icon > img,
 .large-icon > div > img,
 .large-icon > div {
-	box-shadow: 1px 1px 1px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	border-radius: 8px;
 }
 .small-icon > img {
@@ -779,7 +779,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	height: 400px;	
 	margin-top: 25px;
 	border-radius: 10px;
-	box-shadow: 1px 1px 1px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and ( max-width: 767px) {
@@ -793,7 +793,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		width: 88.5%;
 		height: 400px;
 		border-radius: 10px;
-		box-shadow: 1px 1px 1px black;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	}
 	#main > section > section > a:link {
 		color: inherit;
@@ -929,6 +929,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 .notice p a:hover {
 	text-decoration: none;
 	color: #8dc570;
+}
+.notice span > a > img {
+	width: 45%;
 }
 /*
 *******************
