@@ -1030,3 +1030,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	text-decoration: none;
 	color: #ee69a0;
 }
+.camp .box-video {
+   width: 100%;
+   padding-bottom: 60%; /*Nastavenie vysky obrazka v boxe*/
+}
+@media screen and ( max-width: 767px) {
+	.camp .box-video {
+   		width: 40%;
+   		padding-bottom: 25%;
+	}
+}
+
