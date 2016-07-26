@@ -1,17 +1,28 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/lib/slippry/css/slippry.css">
 	<link rel="stylesheet" href="assets/common/css/style.css">
 	<link rel="shortcut icon" type="image/png" href="assets/common/icon/favicon.png"/>
 	<title>Crazy Jump</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="assets/lib/slippry/js/slippry.js"></script>
 	<script type="text/javascript" src="assets/common/js/slippry_banner.js"></script>
 	<script type="text/javascript" src="assets/lib/jquery/js/DoubleTapToGo.js"></script>
 	<script type="text/javascript" src="assets/common/js/taptogo.js"></script>
+	
+	<!--FancyBox-->
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="assets/lib/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/lib/fancybox/jquery.fancybox.css" media="screen" />
+	
+	<!-- Enable media queries for old IE -->
+	<!--[if lt IE 9]>
+		<script src="assets/common/js/css3-mediaqueries.js"></script>
+	<![endif]-->
 </head>
 <body class="camp text-aligned-bottom-adge-of-image">
 	<div class="container">
@@ -88,9 +99,59 @@
 			<section class="row">
 				<section class="col-sm-12 col-md-12 col-lg-12 large-icon">
 					<img src="assets/common/img/camp_small_2.png" width="20%" alt="camp">
-					<h3>Blížiace sa udalosti (Kempy a workshopy)</h3>	
+					<h3>Blížiace sa udalosti (Kempy, workshopy a súťaže)</h3>	
 				</section>
 			</section>
+			<section class="row">
+				<section class="col-sm-8 col-md-8 col-lg-8">
+					<h4>World Jump Rope Championship & Camp</h4>
+					<div>
+					<p><strong>World Jump Rope Federation i tento rok organizuje svetový šampionát v rope skippingu a Slovensko si to nenechá ujsť.</strong></p>
+					</div>
+					<p>
+						<ul>
+							<li>Kedy: 19. - 27.7.2016</li>
+							<li>Kde: Braga, Portugalsko</li>
+						</ul>
+					</p>
+					<p>Podrobnejšie informácie najdete tu <a href="http://www.worldjumprope.org" class="highlight_pink">www.worldjumprope.org</a></p>
+				</section>
+				<section class="col-sm-4 col-md-4 col-lg-4">
+					<div class="wrap">
+						<div class="box-video large-icon">
+							<div class="boxInner">
+								<a href="https://youtu.be/aGKsE1hExeQ">
+									<img src="http://i3.ytimg.com/vi/aGKsE1hExeQ/hqdefault.jpg" />
+								</a>
+								<div class="titleBox">World Jump Rope Championship & Camp</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<hr class="line-main-middle">
+			<section class="row">
+				<section class="col-sm-8 col-md-8 col-lg-8">
+					<h4>BRATISLAVA CUP 2016</h4>
+					<div>
+					<p><strong>Slovenska Rope Skippingová Asociácia (SRSA) organizuje rope skippingovú súťaž Bratislava Cup 2016</strong></p>
+					</div>
+					<p>
+						<ul>
+							<li>Kedy: 16. - 17.4.2016</li>
+							<li>Kde: Športová hala VKP, Nábrežie Gen.L. Slobodu 3</li>
+							<li>Štartovné: 10€</li>
+						</ul>
+					</p>
+					<p>Podrobnejšie informácie najdete tu <a href="http://www.srsa.sk/" class="highlight_pink">www.srsa.sk</a></p>
+				</section>
+				<section class="col-sm-4 col-md-4 col-lg-4">	
+					<a href="assets/common/img/rope-skipping-cup-2016.png" class="fancybox large-icon">
+						<img src="assets/common/img/rope-skipping-cup-2016-thumbnail.png" />
+					</a>
+				</section>
+			</section>
+			<hr class="line-main-middle">
 			<section class="row">
 				<section class="col-sm-12 col-md-12 col-lg-12">
 					<h4>CRAZY JUMP WORKSHOP 2015 <!-- (<a href="#" style="">plagát</a>) --> </h4>
@@ -286,5 +347,7 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Volanie javascriptu fancyboxu po nacitani stranky -->
+	<script type="text/javascript" src="assets/common/js/gallery_settings.js"></script>
 </body>
 </html>

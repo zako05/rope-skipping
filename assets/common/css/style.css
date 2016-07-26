@@ -1008,14 +1008,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 *******************
 */
 
-.camp > .container > #main > section > section > h4,
-.camp > .container > #main > section > section > h4 > a {
-	margin-top: 14px;
-	color: #ee69a0;
+.camp > .container > #main > section > section {
+	padding-bottom: 35px;
 }
-	.camp > .container > #main > section > section > h4 > a:hover {
-		color: #666666;
+	.camp > .container > #main > section > section > h4,
+	.camp > .container > #main > section > section > h4 > a {
+		color: #ee69a0;
 	}
+		.camp > .container > #main > section > section > h4 > a:hover {
+			color: #666666;
+		}
 .camp .second_camp ul {
 	list-style-type: none;
 	padding: 0px;
@@ -1028,3 +1030,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	text-decoration: none;
 	color: #ee69a0;
 }
+.camp .box-video {
+   width: 100%;
+   padding-bottom: 60%; /*Nastavenie vysky obrazka v boxe*/
+}
+@media screen and ( max-width: 767px) {
+	.camp .box-video {
+   		width: 40%;
+   		padding-bottom: 25%;
+	}
+}
+
