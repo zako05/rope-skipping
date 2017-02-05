@@ -1031,8 +1031,8 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	color: #ee69a0;
 }
 .camp .box-video {
-   width: 100%;
-   padding-bottom: 60%; /*Nastavenie vysky obrazka v boxe*/
+	width: 100%;
+	padding-bottom: 60%; /*Nastavenie vysky obrazka v boxe*/
 }
 @media screen and ( max-width: 767px) {
 	.camp .box-video {
@@ -1041,3 +1041,46 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	}
 }
 
+/*
+*******************
+* =modal opned on page load
+*******************
+*/
+#mask {
+	position: absolute;
+  	z-index: 9000;
+  	background-color: #000;
+}
+#boxes .window {
+  	position: fixed;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto;
+	z-index: 9999;
+	text-align: right;
+}
+#boxes img {
+	margin: auto;
+    	display: block;
+    	width: 80%;
+    	max-width: 900px;
+	border-radius: 8px;
+}
+.close {
+	margin-right: 15px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+    #boxes img {
+        width: 100%;
+    }
+}
